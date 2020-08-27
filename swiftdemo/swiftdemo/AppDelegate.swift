@@ -17,30 +17,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let tabbarVC = TabBarViewController()
-               tabbarVC.id_setupChildViewController(viewController: MainViewController(), image:  UIImage(named: "icn_nocolor_icn_components"), selectedImage: UIImage(named: "icn_color_icn_components"), title: "IDealist组件")
-               tabbarVC.id_setupChildViewController(viewController: UIKitViewController(), image:  UIImage(named: "icn_nocolor_icn_uikit"), selectedImage: UIImage(named: "icn_color_icn_uikit"), title: "IDealistUIKit")
-               tabbarVC.id_setupChildViewController(viewController: UnitViewController(), image:  UIImage(named: "icn_nocolor_icn_utils"), selectedImage: UIImage(named: "icn_color_icn_utils"), title: "IDealistUtils")
-//        let rootNC = UINavigationController(rootViewController: rootVC)
-               window?.rootViewController = tabbarVC
-               window?.makeKeyAndVisible()
-               // 解决ios12 pop时tabbar的闪烁问题
-               UITabBar.appearance().isTranslucent = false
+            tabbarVC.id_setupChildViewController(viewController: MainViewController(), image:  UIImage(named: "icn_nocolor_icn_components"), selectedImage: UIImage(named: "icn_color_icn_components"), title: "IDealist组件")
+            tabbarVC.id_setupChildViewController(viewController: UIKitViewController(), image:  UIImage(named: "icn_nocolor_icn_uikit"), selectedImage: UIImage(named: "icn_color_icn_uikit"), title: "IDealistUIKit")
+            tabbarVC.id_setupChildViewController(viewController: UnitViewController(), image:  UIImage(named: "icn_nocolor_icn_utils"), selectedImage: UIImage(named: "icn_color_icn_utils"), title: "IDealistUtils")
+        self.window?.rootViewController = tabbarVC
+        self.window?.makeKeyAndVisible()
+        // 解决ios12 pop时tabbar的闪烁问题
+        UITabBar.appearance().isTranslucent = false
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
+//    // MARK: UISceneSession Lifecycle
+//
+//    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+//        // Called when a new scene session is being created.
+//        // Use this method to select a configuration to create the new scene with.
+//        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+//    }
+//
+//    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+//        // Called when the user discards a scene session.
+//        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+//        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+//    }
 
     // MARK: - Core Data stack
 

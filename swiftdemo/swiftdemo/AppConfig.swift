@@ -23,8 +23,27 @@ var IphoneXBottomSpace: CGFloat = UIDevice.id_isX() == true ? 34:0
 
 var dialogWidth: CGFloat = 300
 
-var RGBAColor: (CGFloat, CGFloat, CGFloat, CGFloat) -> UIColor = {red, green, blue, alpha in
+var RGBAColor: (CGFloat, CGFloat, CGFloat) -> UIColor = {red, green, blue in
+    return UIColor(red: red / 255, green: green / 255, blue: blue / 255, alpha: 1);
+}
+
+var RGBAColorAlpha: (CGFloat, CGFloat, CGFloat, CGFloat) -> UIColor = {red, green, blue, alpha in
     return UIColor(red: red / 255, green: green / 255, blue: blue / 255, alpha: alpha);
+}
+
+/// 根据色值生成颜色(无透明度)(格式为0xffffff)
+//var gof_ColorWithHex: (NSInteger) -> UIColor = { hex in
+//    return UIColor(red: ((CGFloat)((hex & 0xFF0000) >> 16)) / 255.0, green: ((CGFloat)((hex & 0xFF00) >> 8)) / 255.0, blue: ((CGFloat)(hex & 0xFF)) / 255.0, alpha: 1);
+//}
+
+/// 系统普通字体
+var gof_SystemFontWithSize: (CGFloat) -> UIFont = {size in
+    return UIFont.systemFont(ofSize: size);
+}
+
+/// 系统加粗字体
+var gof_BoldFontWithSize: (CGFloat) -> UIFont = {size in
+    return UIFont.boldSystemFont(ofSize: size);
 }
 
 // MARK:- 设置圆角
@@ -47,11 +66,10 @@ func keywindows() -> UIWindow? {
      
         for windowScene:UIWindowScene in ((UIApplication.shared.connectedScenes as? Set<UIWindowScene>)!) {
      
-          if windowScene.activationState == .foregroundActive {
-           window = windowScene.windows.first
-     
-       break
-            }
+        if windowScene.activationState == .foregroundActive {
+         window = windowScene.windows.first
+      break
+       }
       }
          return window
       }else{
