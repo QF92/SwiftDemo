@@ -12,10 +12,9 @@ public extension UIDevice {
     /// iPhone X 在竖屏下，keyWindow 的 safeAreaInsets 值为：{top: 44, left: 0, bottom: 34, right: 0}
     /// 而在横屏下，其值为：{top: 0, left: 44, bottom: 21, right: 44}
     static func id_isX() -> Bool {
-//        let window = UIApplication.shared.keyWindow
-        let window = keywindows()
+        let window = UIApplication.shared.windows[0]
         if #available(iOS 11.0, *) {
-            let bottomSafeInset = window!.safeAreaInsets.bottom
+            let bottomSafeInset = window.safeAreaInsets.bottom
             if (bottomSafeInset == 34.0 || bottomSafeInset == 21.0) {
                 return true
             } else {

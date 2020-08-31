@@ -20,6 +20,13 @@ var KTabBarHeight: CGFloat = UIDevice.id_isX() == true ? 83:49
 /// iphonex 底部间距
 var IphoneXBottomSpace: CGFloat = UIDevice.id_isX() == true ? 34:0
 
+func isiPhoneX() ->Bool {
+    let screenHeight = UIScreen.main.nativeBounds.size.height;
+    if screenHeight == 2436 || screenHeight == 1792 || screenHeight == 2688 || screenHeight == 1624 {
+        return true
+    }
+    return false
+}
 
 var dialogWidth: CGFloat = 300
 

@@ -58,7 +58,7 @@ class BaseViewController: UIViewController {
         let btn = UIButton()
         btn.frame = CGRect.zero
         btn.addTarget(self, action: #selector(BaseViewController.backBtnclick), for: .touchUpInside)
-//        btn.setImage(UIImage(named: "btn_back", in: BundleUtil.getCurrentBundle(), compatibleWith: nil), for: .normal)
+        btn.setImage(UIImage(named: "btn_back", in: BundleUtil.getCurrentBundle(), compatibleWith: nil), for: .normal)
         return btn
     }()
         

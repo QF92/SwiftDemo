@@ -65,6 +65,9 @@ class TabBarViewController: UITabBarController {
         self.hiddenMenuVC()
     }
 }
+//extension 1.划分区域,区分代码功能
+//2.像 OC 一样添加分类
+
 extension TabBarViewController{
     
     func setupLeftView() {

@@ -7,12 +7,25 @@
 //
 
 import UIKit
-
+import Photos
 class UnitViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+//        获取图片,获取视频首帧
+        let option = PHImageRequestOptions()
+        option.isNetworkAccessAllowed = true //允许下载iCloud的图片
+        option.resizeMode = .fast
+        option.deliveryMode = .fastFormat
+//        PHImageManager.default().requestImage(for: asset,
+//                                              targetSize: self.bounds.size,
+//                                              contentMode: .aspectFill,
+//                                              options: option)
+//        { (image, nil) in
+//             //image就是图片
+//        }
         // Do any additional setup after loading the view.
     }
     
