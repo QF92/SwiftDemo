@@ -16,7 +16,7 @@ class HomeListCell: UITableViewCell {
         override func awakeFromNib() {
             super.awakeFromNib()
             
-            self.backgroundColor = UIColor.groupTableViewBackground
+            self.backgroundColor = UIColor.systemGroupedBackground
             self.bottomView.layer.cornerRadius = 4
         }
         

@@ -45,12 +45,12 @@ class DialogCustomView: UIView {
         }()
         lazy var lineViewRow: UIView = {
             let line = UIView.init(frame: CGRect.zero)
-            line.backgroundColor = UIColor.groupTableViewBackground
+            line.backgroundColor = UIColor.systemGroupedBackground
             return line
         }()
         lazy var lineView: UIView = {
             let line = UIView.init(frame: CGRect.zero)
-            line.backgroundColor = UIColor.groupTableViewBackground
+            line.backgroundColor = UIColor.systemGroupedBackground
             return line
         }()
         lazy var bottomView: UIView = {

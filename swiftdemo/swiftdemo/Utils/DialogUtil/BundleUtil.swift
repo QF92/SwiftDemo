@@ -13,7 +13,7 @@ class BundleUtil{
                
        let podBundle = Bundle(for: DealistConfig.self)
        
-       let bundleURL = podBundle.url(forResource: "IDealist", withExtension: "bundle")
+       let bundleURL = podBundle.url(forResource: "swiftdemo", withExtension: "bundle")
        
        if bundleURL != nil {
            let bundle = Bundle(url: bundleURL!)!
@@ -23,26 +23,26 @@ class BundleUtil{
        }
    }
    
-   static func cl_localizedStringForKey(key: String) -> String {
-       return self.cl_localizedStringForKey(key: key, value: "")
-   }
-   
-   static func cl_localizedStringForKey(key: String,value:String) -> String {
-       var bundle: Bundle? = nil
-       
-       if bundle == nil {
-           var language = NSLocale.preferredLanguages.first
-           let r: Range? = language?.range(of: "zh-Hans")
-           if r != nil {
-               language = "zh-Hans"
-           } else {
-               language = "en"
-           }
-           
-           bundle = Bundle(path: self.getCurrentBundle().path(forResource: language, ofType: "lproj")!)
-       }
-       
-       let str = bundle?.localizedString(forKey: key, value: value, table: nil)
-       return str ?? ""
-   }
+//   static func cl_localizedStringForKey(key: String) -> String {
+//       return self.cl_localizedStringForKey(key: key, value: "")
+//   }
+//   
+//   static func cl_localizedStringForKey(key: String,value:String) -> String {
+//       var bundle: Bundle? = nil
+//       
+//       if bundle == nil {
+//           var language = NSLocale.preferredLanguages.first
+//           let r: Range? = language?.range(of: "zh-Hans")
+//           if r != nil {
+//               language = "zh-Hans"
+//           } else {
+//               language = "en"
+//           }
+//           
+//           bundle = Bundle(path: self.getCurrentBundle().path(forResource: language, ofType: "lproj")!)
+//       }
+//       
+//       let str = bundle?.localizedString(forKey: key, value: value, table: nil)
+//       return str ?? ""
+//   }
 }

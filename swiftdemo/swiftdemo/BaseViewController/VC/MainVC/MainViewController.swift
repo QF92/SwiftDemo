@@ -24,7 +24,39 @@ override func viewDidLoad() {
        self.view.addSubview(self.TimeLab1)
        self.view.addSubview(self.timeBtn)
        self.view.addSubview(self.timeBtn2)
-        }
+    
+    
+    // 假如 Swift 6.0 是 iOS 13.0 的 Swift 版本
+       if #available(iOS 13.0, *) {
+           // Swift 6.0 标准库中存在 A
+         
+        @dynamicMemberLookup  //@dynamicMemberLookup 可以用在协议，结构体，枚举，类，甚至标注为 @objc 的类，以及它们的继承者。
+        struct Person5 {
+            subscript(dynamicMember member: String) -> String {
+                let properties = ["name": "Tylor Swift", "city" : "Nashville"]
+                return properties[member, default: ""]
+            }
+            subscript(dynamicMember member: String) -> Int {
+                let properties = ["age": 26, "height": 178]
+                return properties[member, default: 0]
+            }
+         }
+
+        let person5 = Person5()
+        print("person5.name: \(person5.name)")
+        print("person5.city: \(person5.city)")
+        print("person5.favoriteIceCream: \(person5.favoriteIceCream)")
+        
+        
+        print("person5.age: \(person5.age)")
+        let age: Int = person5.age
+        print("person5.age2: \(age)")
+        
+       } else {
+           // 不存在 A 时的处理
+       }
+    
+    }
             
         class InterviewTest {
            var name: String
@@ -48,7 +80,7 @@ override func viewDidLoad() {
            }
     
        lazy var TimeLab:UILabel = {
-        let label = UILabel.init(frame: CGRect.init(x: 15, y: 250, width:100, height: 30))
+        let label = UILabel.init(frame: CGRect.init(x: 15, y: 600, width:100, height: 30))
         label.textColor = RGBAColor(155, 155, 155)
          label.font = UIFont.systemFont(ofSize: 12)
          label.text = "Time1:"
@@ -56,7 +88,7 @@ override func viewDidLoad() {
     }()
     
        lazy var TimeLab1:UILabel = {
-        let label = UILabel.init(frame: CGRect.init(x: 150, y: 250, width:100, height: 30))
+        let label = UILabel.init(frame: CGRect.init(x: 150, y: 600, width:100, height: 30))
         label.textColor = RGBAColor(155, 155, 155)
          label.font = UIFont.systemFont(ofSize: 12)
          label.text = "Time2:"
@@ -77,7 +109,7 @@ override func viewDidLoad() {
         
     }
     lazy var timeBtn:UIButton = {
-        let timebtn = UIButton.init(frame: CGRect.init(x: 15, y: 300, width: 100, height: 30))
+        let timebtn = UIButton.init(frame: CGRect.init(x: 15, y: 650, width: 100, height: 30))
         timebtn.setTitle("Start Timer1", for: UIControl.State.normal)
         timebtn.backgroundColor = UIColor.red
         timebtn.layer.cornerRadius = 20
@@ -87,7 +119,7 @@ override func viewDidLoad() {
     }()
     
     lazy var timeBtn2:UIButton = {
-        let timebtn = UIButton.init(frame: CGRect.init(x: 150, y: 300, width: 100, height: 30))
+        let timebtn = UIButton.init(frame: CGRect.init(x: 150, y: 650, width: 100, height: 30))
         timebtn.setTitle("Start Timer2", for: UIControl.State.normal)
         timebtn.backgroundColor = UIColor.red
         timebtn.layer.cornerRadius = 20
@@ -115,7 +147,7 @@ override func viewDidLoad() {
     }()
     
     
-    let dataArr = ["对话框组件 IDDialog", "轻提示组件 IDToast", "加载框组件 IDLoading", "空状态组件 IDEmptyView", "图片选择组件 IDImagePicker", "扫描二维码组件 IDScanCode", "基础控制器 IDBaseViewController"]
+    let dataArr = ["对话框组件 Dialog", "轻提示组件 Toast", "加载框组件 Loading", "空状态组件 EmptyView", "图片选择组件 ImagePicker", "扫描二维码组件 ScanCode", "基础控制器 BaseViewController"]
     let imageArr = ["icn_icn_dialog", "icn_icn_toast", "icn_icn_loading", "icn_icn_refresh", "icn_icn_emptyview", "icn_icn_update", "icn_icn_image", "icn_icn_scanning", "icn_icn_view"]
  
     override func rightBtnClick() {
@@ -158,8 +190,8 @@ extension MainViewController:UITableViewDelegate,UITableViewDataSource{
     //            self.navigationController?.pushViewController(vc, animated: true)
     //        }
             if indexPath.section == 3 {
-//                let vc = TestIDEmptyViewController()
-//                self.navigationController?.pushViewController(vc, animated: true)
+                let vc = EmptyTestVC()
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             
     //        if indexPath.section ==  {
@@ -167,16 +199,16 @@ extension MainViewController:UITableViewDelegate,UITableViewDataSource{
     //            self.navigationController?.pushViewController(vc, animated: true)
     //        }
             if indexPath.section == 4 {
-//                let vc = TestIDImagePickerViewController()
-//                self.navigationController?.pushViewController(vc, animated: true)
+                let vc = ImagePickerVC()
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             if indexPath.section == 5 {
-//                let vc = TestIDScanCodeViewController()
-//                self.navigationController?.pushViewController(vc, animated: true)
+                let vc = ScanQRCodeVC()
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             if indexPath.section == 6 {
-//                let vc = TestIDBaseViewController()
-//                self.navigationController?.pushViewController(vc, animated: true)
+                let vc = ShowBaseVC()
+                self.navigationController?.pushViewController(vc, animated: true)
             }
         }
         func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

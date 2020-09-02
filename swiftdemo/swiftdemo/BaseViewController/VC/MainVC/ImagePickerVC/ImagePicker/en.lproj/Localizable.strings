@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  swiftdemo
+
+  Created by qf on 2020/9/1.
+  Copyright © 2020 qf. All rights reserved.
+*/
+"完成" = "OK";
+"取消" = "Cancel";
+"相册" = "Photos";
+"预览" = "Preview";
+"重置" = "Reset";
+"错误" = "Error";
+"编辑" = "Edit";
+"播放出错" = "Playback error";
+"您最多只能选择%zd张照片" = "Select a maximum of %zd photos";
+"知道了" = "I See";
+"视频文件和图片文件只能选择1种" = "Video and image file can only choose one";
+
+
+"涂鸦" = "Graffiti";
+"橡皮擦" = "Eraser";
+"马赛克" = "Mosaic";
+"上一步" = "Undo";
+"下一步" = "Redo";
+
+"照片访问受限" = "Limited access to photos";
+"点击“设置”，允许访问您的照片" = "Click “Settings”, allowing access to your photos";
+"设置" = "Setting";
+
+"相机访问受限" = "Limited access to camera";
+"点击“设置”，允许访问您的相机" = "Click “Settings”, allowing access to your camera";
+
+"拍照" = "Taking Pictures";
+"从手机相册选择" = "From the mobile phone photo album choice";
+
+"收藏" = "Favorites";
+"视频" = "Videos";
+"所有照片" = "All Photos";
+"最近添加" = "Recently Added";
+"屏幕快照" = "Screenshots";
+"自拍" = "Selfies";
+"最近删除" = "Recently Deleted";

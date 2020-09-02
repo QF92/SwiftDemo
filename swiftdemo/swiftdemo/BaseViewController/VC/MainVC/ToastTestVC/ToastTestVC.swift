@@ -55,7 +55,7 @@ class ToastTestVC: BaseViewController {
         }()
         lazy var bottomView: UIView = {
             let bottom  = UIView.init(frame: CGRect.init(x: 50, y: KScreenHeight-80, width: KScreenWidth-100, height: 80))
-            bottom.backgroundColor = UIColor.groupTableViewBackground
+            bottom.backgroundColor = UIColor.systemGroupedBackground
             return bottom
         }()
     /*

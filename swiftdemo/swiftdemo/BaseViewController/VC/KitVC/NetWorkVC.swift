@@ -1,14 +1,14 @@
 //
-//  UIKitViewController.swift
+//  NetWorkVC.swift
 //  swiftdemo
 //
-//  Created by qf on 2020/3/9.
+//  Created by qf on 2020/9/1.
 //  Copyright © 2020 qf. All rights reserved.
 //
 
 import UIKit
 import MJRefresh
-class UIKitViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class NetWorkVC: BaseViewController , UITableViewDataSource, UITableViewDelegate {
 
     fileprivate var currentTabelView:UITableView?
     fileprivate var dataModel:MyActivityListModel?

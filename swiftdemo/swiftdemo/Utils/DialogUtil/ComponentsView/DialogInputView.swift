@@ -24,7 +24,7 @@ class DialogInputView: UIView {
         text.backgroundColor = UIColor.white
         text.layer.cornerRadius = 5
         text.layer.borderWidth = 1
-        text.layer.borderColor = UIColor.groupTableViewBackground.cgColor
+        text.layer.borderColor = UIColor.systemGroupedBackground.cgColor
         return text
     }()
     lazy var leftBtn: UIButton = {
@@ -42,12 +42,12 @@ class DialogInputView: UIView {
     }()
     lazy var lineViewRow: UIView = {
         let line = UIView.init(frame: CGRect.zero)
-        line.backgroundColor = UIColor.groupTableViewBackground
+        line.backgroundColor = UIColor.systemGroupedBackground
         return line
     }()
     lazy var lineView: UIView = {
         let line = UIView.init(frame: CGRect.zero)
-        line.backgroundColor = UIColor.groupTableViewBackground
+        line.backgroundColor = UIColor.systemGroupedBackground
         return line
     }()
     lazy var bottomView: UIView = {
