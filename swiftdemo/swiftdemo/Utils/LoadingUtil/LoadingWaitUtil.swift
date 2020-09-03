@@ -36,7 +36,7 @@ class LoadingWaitUtil: NSObject {
             super.init()
             
             // 添加控件
-            let superView = onView ?? UIApplication.shared.keyWindow
+            let superView = onView ?? UIApplication.shared.windows.first
             superView?.addSubview(self.coverView)
             superView?.addSubview(self.bottomView)
             self.bottomView.addSubview(self.progressView)

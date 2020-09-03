@@ -25,7 +25,7 @@ class DialogTestVC: BaseViewController {
             super.viewDidLoad()
             
             self.view.addSubview(tableView)
-            self.id_navTitle = "IDDialog支持3种样式"
+            self.id_navTitle = "Dialog支持3种样式"
         }
     }
     //MARK: - UITableViewDelegate,UITableViewDataSource

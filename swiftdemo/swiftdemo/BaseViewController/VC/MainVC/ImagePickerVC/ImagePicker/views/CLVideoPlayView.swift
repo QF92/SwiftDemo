@@ -51,11 +51,11 @@ class CLVideoPlayView: UIView {
     
     @objc public static func setupAmplifyViewWithUITapGestureRecognizer(tap:UITapGestureRecognizer,superView:UIView,originImageAsset:PHAsset,isSingleChoose:Bool) -> CLVideoPlayView{
         
-        let amplifyView = CLVideoPlayView.init(frame: (UIApplication.shared.keyWindow?.bounds)!)
+        let amplifyView = CLVideoPlayView.init(frame: (UIApplication.shared.windows.first?.bounds)!)
         
         amplifyView.setupUIWithUITapGestureRecognizer(tap: tap, superView: superView,originImageAsset:originImageAsset,isSingleChoose:isSingleChoose)
         
-        UIApplication.shared.keyWindow?.addSubview(amplifyView)
+        UIApplication.shared.windows.first?.addSubview(amplifyView)
         
         return amplifyView
     }
@@ -64,7 +64,7 @@ class CLVideoPlayView: UIView {
         
         self.asset = originImageAsset
         
-        self.frame = (UIApplication.shared.keyWindow?.bounds)!
+        self.frame = (UIApplication.shared.windows.first?.bounds)!
         self.backgroundColor = UIColor.black
         
         self.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(self.clickBgView(tapBgView:))))

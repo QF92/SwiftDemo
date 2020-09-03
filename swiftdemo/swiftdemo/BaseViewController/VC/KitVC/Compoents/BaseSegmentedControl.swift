@@ -36,7 +36,7 @@ class BaseSegmentedControl: UISegmentedControl {
     fileprivate extension UIImage{
         
         /// 通过颜色生成图片
-        fileprivate class func renderImageWithColor(_ color: UIColor, size: CGSize) -> UIImage {
+        class func renderImageWithColor(_ color: UIColor, size: CGSize) -> UIImage {
             UIGraphicsBeginImageContext(size)
             guard let context = UIGraphicsGetCurrentContext() else {
                 UIGraphicsEndImageContext()

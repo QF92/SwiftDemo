@@ -30,7 +30,7 @@ class EmptyTestVC: BaseViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
 
-            self.id_navTitle = "IDEmptyView"
+            self.id_navTitle = "EmptyView"
             
             self.view.addSubview(tableView)
         }

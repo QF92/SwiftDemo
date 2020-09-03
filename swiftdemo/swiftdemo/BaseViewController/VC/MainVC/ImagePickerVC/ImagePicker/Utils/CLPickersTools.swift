@@ -314,7 +314,7 @@ class CLPickersTools {
         option.isSynchronous = true
         
         var isInLocalAblum: Bool?
-        manager.requestImageData(for: asset, options: option, resultHandler: { (imageData, dataUTI, orientation, info) in
+        manager.requestImageDataAndOrientation(for: asset, options: option, resultHandler: { (imageData, dataUTI, orientation, info) in
             isInLocalAblum = imageData == nil ? false:true
         })
         
@@ -326,7 +326,7 @@ class CLPickersTools {
     }
     
     func delectIndexPath(indexPath: IndexPath) {
-        let index = self.indexPathArr.index(of: indexPath)
+        let index = self.indexPathArr.firstIndex(of: indexPath)
         if index != nil {
             self.indexPathArr.remove(at: index!)
         }
@@ -352,7 +352,7 @@ class CLPickersTools {
             // 取出之前的数据
             let dataArr = UserDefaults.standard.value(forKey: CLChooseImageAssetLocalIdentifierKey)
             var arr: Array<String> = dataArr as! Array<String>
-            let i = arr.index(of: asset.localIdentifier)
+            let i = arr.firstIndex(of: asset.localIdentifier)
             if i != nil {
                 arr.remove(at: i!)
             }
@@ -368,7 +368,7 @@ class CLPickersTools {
             return nil
         } else {
             let arr: Array<String> = dataArr as! Array<String>
-            let i = arr.index(of: asset.localIdentifier)
+            let i = arr.firstIndex(of: asset.localIdentifier)
             return i
         }
     }

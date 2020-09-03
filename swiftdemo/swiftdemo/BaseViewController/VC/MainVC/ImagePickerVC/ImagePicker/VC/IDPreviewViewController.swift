@@ -179,7 +179,7 @@ class IDPreviewViewController: BaseImagePickerViewController {
         print("CLPreviewViewController销毁")
     }
     @IBAction func clickEditorBtn(_ sender: Any) {
-        let vc = IDEditorViewController.init(nibName: "IDEditorViewController", bundle: BundleUtil.getCurrentBundle())
+        let vc = IDEditorViewController.init(nibName: "EditorViewController", bundle: BundleUtil.getCurrentBundle())
         vc.model = self.picArray[self.currentPage-1]
         self.present(vc, animated: false, completion: nil)
     }

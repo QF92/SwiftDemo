@@ -303,6 +303,14 @@
 		08AAC51024FF7D97000B3044 /* URLVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08AAC50F24FF7D97000B3044 /* URLVC.xib */; };
 		08AAC51224FF7DD8000B3044 /* ArrayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC51124FF7DD8000B3044 /* ArrayVC.swift */; };
 		08AAC51624FF7E06000B3044 /* ArrayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08AAC51524FF7E06000B3044 /* ArrayVC.xib */; };
+		08AAC51A2500E64B000B3044 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC5192500E64B000B3044 /* FontExtension.swift */; };
+		08AAC51D2500EBB9000B3044 /* OtherTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC51C2500EBB9000B3044 /* OtherTabBarVC.swift */; };
+		08AAC5202500ECBD000B3044 /* BaseTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC51F2500ECBD000B3044 /* BaseTabBar.swift */; };
+		08AAC5232500F75F000B3044 /* QFAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC5222500F75F000B3044 /* QFAPI.swift */; };
+		08AAC5252500F7AC000B3044 /* QFMultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC5242500F7AC000B3044 /* QFMultipartData.swift */; };
+		08AAC5272500F7E4000B3044 /* QFNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC5262500F7E4000B3044 /* QFNetworking.swift */; };
+		08AAC5292500F812000B3044 /* QFNetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC5282500F812000B3044 /* QFNetworkingError.swift */; };
+		08AAC52B2500F83A000B3044 /* QFNetworkingOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC52A2500F83A000B3044 /* QFNetworkingOC.swift */; };
 		08FFAF55238690FE005D299E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FFAF54238690FE005D299E /* AppDelegate.swift */; };
 		08FFAF57238690FE005D299E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FFAF56238690FE005D299E /* SceneDelegate.swift */; };
 		08FFAF5C238690FE005D299E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FFAF5A238690FE005D299E /* Main.storyboard */; };
@@ -620,6 +628,14 @@
 		08AAC50F24FF7D97000B3044 /* URLVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URLVC.xib; sourceTree = "<group>"; };
 		08AAC51124FF7DD8000B3044 /* ArrayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayVC.swift; sourceTree = "<group>"; };
 		08AAC51524FF7E06000B3044 /* ArrayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArrayVC.xib; sourceTree = "<group>"; };
+		08AAC5192500E64B000B3044 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		08AAC51C2500EBB9000B3044 /* OtherTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTabBarVC.swift; sourceTree = "<group>"; };
+		08AAC51F2500ECBD000B3044 /* BaseTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBar.swift; sourceTree = "<group>"; };
+		08AAC5222500F75F000B3044 /* QFAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFAPI.swift; sourceTree = "<group>"; };
+		08AAC5242500F7AC000B3044 /* QFMultipartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFMultipartData.swift; sourceTree = "<group>"; };
+		08AAC5262500F7E4000B3044 /* QFNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFNetworking.swift; sourceTree = "<group>"; };
+		08AAC5282500F812000B3044 /* QFNetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFNetworkingError.swift; sourceTree = "<group>"; };
+		08AAC52A2500F83A000B3044 /* QFNetworkingOC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFNetworkingOC.swift; sourceTree = "<group>"; };
 		08FFAF51238690FE005D299E /* swiftdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FFAF54238690FE005D299E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08FFAF56238690FE005D299E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -670,6 +686,7 @@
 		084F473D23D42F8900E12729 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				08AAC51B2500EB87000B3044 /* OtherTabBarVC */,
 				084F473E23D4305F00E12729 /* TabBarViewController.swift */,
 				084F474723D4502800E12729 /* BaseNavViewController.swift */,
 				084F474923D45A5C00E12729 /* BaseViewController.swift */,
@@ -799,6 +816,7 @@
 				08AAC4FD24FF7AE5000B3044 /* DateExtension.swift */,
 				08AAC4FF24FF7B1D000B3044 /* ViewControllerExtension.swift */,
 				08AAC50124FF7B72000B3044 /* UrlExtension.swift */,
+				08AAC5192500E64B000B3044 /* FontExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1305,6 +1323,35 @@
 			path = Compoents;
 			sourceTree = "<group>";
 		};
+		08AAC51B2500EB87000B3044 /* OtherTabBarVC */ = {
+			isa = PBXGroup;
+			children = (
+				08AAC51E2500EC96000B3044 /* View */,
+				08AAC51C2500EBB9000B3044 /* OtherTabBarVC.swift */,
+			);
+			path = OtherTabBarVC;
+			sourceTree = "<group>";
+		};
+		08AAC51E2500EC96000B3044 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				08AAC51F2500ECBD000B3044 /* BaseTabBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		08AAC5212500F6E4000B3044 /* QFNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				08AAC5222500F75F000B3044 /* QFAPI.swift */,
+				08AAC5242500F7AC000B3044 /* QFMultipartData.swift */,
+				08AAC5262500F7E4000B3044 /* QFNetworking.swift */,
+				08AAC5282500F812000B3044 /* QFNetworkingError.swift */,
+				08AAC52A2500F83A000B3044 /* QFNetworkingOC.swift */,
+			);
+			path = QFNetWork;
+			sourceTree = "<group>";
+		};
 		08FFAF48238690FE005D299E = {
 			isa = PBXGroup;
 			children = (
@@ -1328,6 +1375,7 @@
 			children = (
 				084F474223D4356200E12729 /* Utils */,
 				084F474023D4339A00E12729 /* AppConfig.swift */,
+				08AAC5212500F6E4000B3044 /* QFNetWork */,
 				08AAC27124F7DE35000B3044 /* NetWorkingTool.swift */,
 				084F473C23D42F7500E12729 /* BaseViewController */,
 				08FFAF54238690FE005D299E /* AppDelegate.swift */,
@@ -1624,6 +1672,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08AAC51A2500E64B000B3044 /* FontExtension.swift in Sources */,
 				08AAC45A24FE3EE9000B3044 /* ShowBaseVC.swift in Sources */,
 				08AAC4AE24FE6405000B3044 /* BaseLabel.swift in Sources */,
 				08AAC4A224FE496A000B3044 /* LimitsTools.swift in Sources */,
@@ -1631,17 +1680,22 @@
 				08AAC4E424FF459B000B3044 /* BaseProgressView.swift in Sources */,
 				08AAC3A924FE1B36000B3044 /* EraserBrush.swift in Sources */,
 				08AAC27224F7DE35000B3044 /* NetWorkingTool.swift in Sources */,
+				08AAC51D2500EBB9000B3044 /* OtherTabBarVC.swift in Sources */,
 				08AAC25B24F7A1E7000B3044 /* CountdownTimer.swift in Sources */,
 				08AAC4BA24FE710E000B3044 /* TextViewVC.swift in Sources */,
 				08AAC34724FDF091000B3044 /* CLPickersTools.swift in Sources */,
 				08AAC39124FDF83B000B3044 /* CustomNavgationViews.swift in Sources */,
 				08AAC4FE24FF7AE5000B3044 /* DateExtension.swift in Sources */,
+				08AAC5232500F75F000B3044 /* QFAPI.swift in Sources */,
 				08AAC37424FDF7F9000B3044 /* IDPreviewViewController.swift in Sources */,
 				08AAC36F24FDF7F9000B3044 /* CLPreviewViewController.swift in Sources */,
+				08AAC5252500F7AC000B3044 /* QFMultipartData.swift in Sources */,
 				08AAC39A24FDF83B000B3044 /* MiniCollectionView.swift in Sources */,
 				08AAC3AD24FE1BA0000B3044 /* RectangleBrush.swift in Sources */,
 				08FFAF5F238690FE005D299E /* swiftdemo.xcdatamodeld in Sources */,
 				080C973524163773008073D4 /* MainViewController.swift in Sources */,
+				08AAC5272500F7E4000B3044 /* QFNetworking.swift in Sources */,
+				08AAC5292500F812000B3044 /* QFNetworkingError.swift in Sources */,
 				08AAC39F24FDFB73000B3044 /* DrawBoard.swift in Sources */,
 				08AAC38B24FDF83B000B3044 /* CLVideoPlayView.swift in Sources */,
 				08AAC2AF24FCD729000B3044 /* DealistConfig.swift in Sources */,
@@ -1711,6 +1765,7 @@
 				08AAC48F24FE4560000B3044 /* BMScanController.m in Sources */,
 				08AAC37224FDF7F9000B3044 /* IDEditorViewController.swift in Sources */,
 				08AAC4B224FE6BE4000B3044 /* LabelVC.swift in Sources */,
+				08AAC52B2500F83A000B3044 /* QFNetworkingOC.swift in Sources */,
 				08AAC30D24FCFBA6000B3044 /* LoadingListVC.swift in Sources */,
 				08AAC29824FCCDBE000B3044 /* DialogCell.swift in Sources */,
 				08AAC35124FDF37F000B3044 /* HDAlertWindowView.swift in Sources */,
@@ -1752,6 +1807,7 @@
 				08AAC27924F8FFB7000B3044 /* DetailModel.swift in Sources */,
 				08AAC2AD24FCD6AB000B3044 /* BundleUtil.swift in Sources */,
 				08AAC38A24FDF83B000B3044 /* CLImagePickerCamaroCell.swift in Sources */,
+				08AAC5202500ECBD000B3044 /* BaseTabBar.swift in Sources */,
 				08AAC4E624FF45C0000B3044 /* BaseProgressCircleView.swift in Sources */,
 				08AAC38D24FDF83B000B3044 /* PencilChooseView.swift in Sources */,
 				08AAC4A924FE597B000B3044 /* BaseButton.swift in Sources */,

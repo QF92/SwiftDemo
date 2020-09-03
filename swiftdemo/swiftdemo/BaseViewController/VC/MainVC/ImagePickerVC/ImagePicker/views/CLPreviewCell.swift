@@ -95,7 +95,7 @@ class CLPreviewCell: UICollectionViewCell {
                         })
                     }
                     
-                    self.imageRequestID = self.manager.requestImageData(for: self.model.phAsset!, options: option, resultHandler: { (imageData, string, imageOrientation, info) in
+                    self.imageRequestID = self.manager.requestImageDataAndOrientation(for: self.model.phAsset!, options: option, resultHandler: { (imageData, string, imageOrientation, info) in
                         if imageData != nil {
                             
                             if self.model?.index == self.identifyIndex {
@@ -158,7 +158,7 @@ extension CLPreviewCell: CAAnimationDelegate {
     func dealGif(originImageAsset: PHAsset) {
         let option = PHImageRequestOptions()
         option.isSynchronous = true
-        PHImageManager.default().requestImageData(for: originImageAsset, options: option, resultHandler: { (gifImgData, str, imageOrientation, info) in
+        PHImageManager.default().requestImageDataAndOrientation(for: originImageAsset, options: option, resultHandler: { (gifImgData, str, imageOrientation, info) in
             if gifImgData != nil {
                 self.createKeyFram(imgData: gifImgData!)
             }

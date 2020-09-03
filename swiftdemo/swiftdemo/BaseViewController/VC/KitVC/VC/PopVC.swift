@@ -12,9 +12,9 @@ class PopVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.id_navTitle = "IDPopView"
+        self.id_navTitle = "PopView"
         
-        self.view.backgroundColor = UIColor.groupTableViewBackground
+        self.view.backgroundColor = UIColor.systemGroupedBackground
 
     }
     lazy var contentView: UIView = {
@@ -25,7 +25,7 @@ class PopVC: BaseViewController {
             content.addSubview(btn)
             btn.setTitleColor(UIColor.black, for: .normal)
             let line = UIView.init(frame: CGRect.init(x: 0, y: 40, width: btn.frame.width, height: 1))
-            line.backgroundColor = UIColor.groupTableViewBackground
+            line.backgroundColor = UIColor.systemGroupedBackground
             content.addSubview(line)
             let btn2 = UIButton.init(frame: CGRect.init(x: 0, y: 41, width: 150, height: 40))
             btn2.setTitle("测试2", for: .normal)
@@ -42,7 +42,7 @@ class PopVC: BaseViewController {
             content.addSubview(btn)
             btn.setTitleColor(UIColor.white, for: .normal)
             let line = UIView.init(frame: CGRect.init(x: 0, y: 40, width: btn.frame.width, height: 1))
-            line.backgroundColor = UIColor.groupTableViewBackground
+            line.backgroundColor = UIColor.systemGroupedBackground
             content.addSubview(line)
             let btn2 = UIButton.init(frame: CGRect.init(x: 0, y: 41, width: 150, height: 40))
             btn2.setTitle("测试2", for: .normal)

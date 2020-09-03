@@ -107,7 +107,7 @@ class BaseSearchBar: UIView, UISearchBarDelegate {
         self.search.frame = self.bounds
         
         // 去掉背景的灰色
-        self.search.backgroundImage = self.imageWithColor(color: UIColor.groupTableViewBackground, size: search.frame.size)
+        self.search.backgroundImage = self.imageWithColor(color: UIColor.systemGroupedBackground, size: search.frame.size)
         
         // 修改搜索框的样式
         let textF = self.search.value(forKeyPath: "searchField") as! UITextField

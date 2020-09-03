@@ -56,7 +56,7 @@ class DialogUtil: Operation {
         var inputView: DialogInputView? = DialogInputView()
         var customView: DialogCustomView? = DialogCustomView()
 
-        var superComponent: UIView = (UIApplication.shared.keyWindow ?? UIView())
+    var superComponent: UIView = (UIApplication.shared.windows.first ?? UIView())
         var type = DialogUtilType.normal
         var imageType: DialogUtilImageType? = nil
 

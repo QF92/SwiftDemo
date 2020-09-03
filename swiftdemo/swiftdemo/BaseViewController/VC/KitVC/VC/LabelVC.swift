@@ -13,7 +13,7 @@ class LabelVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.id_navTitle = "BaseLabel"
-        self.view.backgroundColor = UIColor.groupTableViewBackground
+        self.view.backgroundColor = UIColor.systemGroupedBackground
         
         self.view.addSubview(self.title1)
         self.view.addSubview(self.bottomView1)

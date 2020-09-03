@@ -49,7 +49,7 @@ class SwitchVC: BaseViewController {
 
         self.id_navTitle = "Switch"
 
-        self.view.backgroundColor = UIColor.groupTableViewBackground
+        self.view.backgroundColor = UIColor.systemGroupedBackground
         self.view1.addSubview(self.mySwitch)
         self.view2.addSubview(self.mySwitch2)
         self.view3.addSubview(self.mySwitch3)

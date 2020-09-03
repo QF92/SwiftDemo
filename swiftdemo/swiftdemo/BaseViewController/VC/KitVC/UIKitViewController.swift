@@ -15,7 +15,7 @@ class UIKitViewController: BaseViewController {
          
          self.view.addSubview(tableView)
          self.tableView.contentInset = UIEdgeInsets.init(top: 10, left: 0, bottom: 0, right: 0)
-         self.id_navTitle = "IDealist"
+         self.id_navTitle = "Dealist"
          self.id_rightBtn.setImage(UIImage(named: "icn_icn_imfomation"), for: .normal)
      }
     
@@ -38,7 +38,7 @@ class UIKitViewController: BaseViewController {
          
          
          override func rightBtnClick() {
-//             let vc = IDInfoViewController.init(nibName: "IDInfoViewController", bundle: nil)
+//             let vc = InfoViewController.init(nibName: "InfoViewController", bundle: nil)
 //             self.navigationController?.pushViewController(vc, animated: true)
          }
      }

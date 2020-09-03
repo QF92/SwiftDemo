@@ -26,7 +26,7 @@ class LoadingGifUtil: NSObject {
             super.init()
             
             // 添加控件
-            let superView = onView ?? UIApplication.shared.keyWindow
+            let superView = onView ?? UIApplication.shared.windows.first
             let loadingType = type ?? .wait
             if loadingType == .wait {
                 superView?.addSubview(self.coverView)

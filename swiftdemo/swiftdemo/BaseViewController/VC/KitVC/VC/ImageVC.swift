@@ -12,7 +12,7 @@ class ImageVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.id_navTitle = "IDImage"
+        self.id_navTitle = "Image"
         self.view.addSubview(self.label)
         self.view.addSubview(self.imgView)
         self.view.addSubview(self.label2)

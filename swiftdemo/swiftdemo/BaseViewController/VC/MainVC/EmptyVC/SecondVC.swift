@@ -15,7 +15,7 @@ class SecondVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.id_navTitle = "IDEmptyView"
+        self.id_navTitle = "EmptyView"
         
         view.backgroundColor = UIColor.white
         view.id_empty = EmptyView.create().configStyle(style)

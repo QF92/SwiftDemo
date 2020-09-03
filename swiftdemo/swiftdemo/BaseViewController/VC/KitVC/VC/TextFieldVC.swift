@@ -25,9 +25,9 @@ class TextFieldVC: BaseViewController {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            self.id_navTitle = "IDTextField"
+            self.id_navTitle = "TextField"
 
-            self.view.backgroundColor = UIColor.groupTableViewBackground
+            self.view.backgroundColor = UIColor.systemGroupedBackground
 
             self.BaseText1.maxLength = 10
 

@@ -71,8 +71,8 @@ class TabBarViewController: UITabBarController {
 extension TabBarViewController{
     
     func setupLeftView() {
-            self.menuViewController?.view.xf_x = -KScreenWidth
-            self.menuViewController?.view.xf_y = 0
+            self.menuViewController?.view.id_x = -KScreenWidth
+            self.menuViewController?.view.id_y = 0
             self.view.addSubview(menuViewController?.view ?? UIView())
             
             self.menuCoverView.alpha = self.alpheValue
@@ -84,8 +84,8 @@ extension TabBarViewController{
             
             self.mainCoverView.isHidden = true
             self.mainCoverView.alpha = 0
-            UIApplication.shared.keyWindow?.addSubview(self.mainCoverView)
-            UIApplication.shared.keyWindow?.bringSubviewToFront(self.mainCoverView)
+            UIApplication.shared.windows.first?.addSubview(self.mainCoverView)
+            UIApplication.shared.windows.first?.bringSubviewToFront(self.mainCoverView)
             
             // 给主视图绑定 UIPanGestureRecognizer
             let panGesture = UIPanGestureRecognizer.init(target: self, action: #selector(self.coverpan(pan:)))
@@ -104,10 +104,10 @@ extension TabBarViewController{
             
             if offSetX<0 {
                 
-                self.mainViewController.navigationController?.view.xf_x = KScreenWidth-self.transitionW+offSetX
-                self.tabBar.xf_x = KScreenWidth-self.transitionW+offSetX
-                self.menuViewController?.view.xf_x = offSetX + (-self.transitionW)
-                self.mainCoverView.xf_x = self.tabBar.xf_x
+                self.mainViewController.navigationController?.view.id_x = KScreenWidth-self.transitionW+offSetX
+                self.tabBar.id_x  = KScreenWidth-self.transitionW+offSetX
+                self.menuViewController?.view.id_x  = offSetX + (-self.transitionW)
+                self.mainCoverView.id_x = self.tabBar.id_x
                 
                 
                 self.menuCoverView.alpha = self.alpheValue * (-offSetX/(KScreenWidth-transitionW))
@@ -142,10 +142,10 @@ extension TabBarViewController{
                 
                 self.addCover()
                 
-                self.mainViewController.navigationController?.view.xf_x = offSetX
-                self.tabBar.xf_x = offSetX
-                self.menuViewController?.view.xf_x = -KScreenWidth+offSetX
-                self.mainCoverView.xf_x = self.tabBar.xf_x
+                self.mainViewController.navigationController?.view.id_x = offSetX
+                self.tabBar.id_x = offSetX
+                self.menuViewController?.view.id_x = -KScreenWidth+offSetX
+                self.mainCoverView.id_x = self.tabBar.id_x
                 
                 self.menuCoverView.alpha = self.alpheValue - self.alpheValue * (offSetX/(KScreenWidth-self.transitionW))
                 self.mainCoverView.alpha = self.alpheValue - self.menuCoverView.alpha
@@ -165,11 +165,11 @@ extension TabBarViewController{
         func showMenuVC() {
             
             UIView.animate(withDuration: 0.2, animations: {
-                self.mainViewController.navigationController?.view.xf_x = KScreenWidth-self.transitionW
-                self.tabBar.xf_x = KScreenWidth-self.transitionW
-                self.mainCoverView.xf_x = self.tabBar.xf_x
+                self.mainViewController.navigationController?.view.id_x = KScreenWidth-self.transitionW
+                self.tabBar.id_x = KScreenWidth-self.transitionW
+                self.mainCoverView.id_x = self.tabBar.id_x
                 
-                self.menuViewController?.view.xf_x = -self.transitionW
+                self.menuViewController?.view.id_x = -self.transitionW
                 
                 self.menuCoverView.alpha = 0
                 self.mainCoverView.isHidden = false
@@ -182,11 +182,11 @@ extension TabBarViewController{
         @objc func hiddenMenuVC () {
             UIView.animate(withDuration: 0.2, animations: {
                 
-                self.mainViewController.navigationController?.view.xf_x = 0
-                self.tabBar.xf_x = 0
-                self.mainCoverView.xf_x = 0
+                self.mainViewController.navigationController?.view.id_x = 0
+                self.tabBar.id_x = 0
+                self.mainCoverView.id_x = 0
                 
-                self.menuViewController?.view.xf_x = -KScreenWidth
+                self.menuViewController?.view.id_x = -KScreenWidth
                 
                 self.menuCoverView.alpha = self.alpheValue
                 self.mainCoverView.isHidden = true
@@ -202,87 +202,3 @@ extension TabBarViewController{
         }
     }
 
-    extension UIView {
-        /// x
-        var xf_x: CGFloat {
-            get {
-                return frame.origin.x
-            }
-            set(newValue) {
-                var tempFrame: CGRect = frame
-                tempFrame.origin.x    = newValue
-                frame                 = tempFrame
-            }
-        }
-        /// y
-        var xf_y: CGFloat {
-            get {
-                return frame.origin.y
-            }
-            set(newValue) {
-                var tempFrame: CGRect = frame
-                tempFrame.origin.y    = newValue
-                frame                 = tempFrame
-            }
-        }
-        
-        /// height
-        var xf_height: CGFloat {
-            get {
-                return frame.size.height
-            }
-            set(newValue) {
-                var tempFrame: CGRect = frame
-                tempFrame.size.height = newValue
-                frame                 = tempFrame
-            }
-        }
-        
-        /// width
-        var xf_width: CGFloat {
-            get {
-                return frame.size.width
-            }
-            set(newValue) {
-                var tempFrame: CGRect = frame
-                tempFrame.size.width = newValue
-                frame = tempFrame
-            }
-        }
-        
-        /// size
-        var xf_size: CGSize {
-            get {
-                return frame.size
-            }
-            set(newValue) {
-                var tempFrame: CGRect = frame
-                tempFrame.size = newValue
-                frame = tempFrame
-            }
-        }
-        
-        /// centerX
-        var xf_centerX: CGFloat {
-            get {
-                return center.x
-            }
-            set(newValue) {
-                var tempCenter: CGPoint = center
-                tempCenter.x = newValue
-                center = tempCenter
-            }
-        }
-        
-        /// centerY
-        var xf_centerY: CGFloat {
-            get {
-                return center.y
-            }
-            set(newValue) {
-                var tempCenter: CGPoint = center
-                tempCenter.y = newValue
-                center = tempCenter;
-            }
-        }
-}

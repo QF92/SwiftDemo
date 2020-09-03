@@ -97,7 +97,7 @@ class BaseTextView: UITextView {
         if self.id_onlyNumber == true {
             for i in (self.text)! {
                 if "0123456789".contains(i)==false {
-                    let index = self.text.index(of: i)
+                    let index = self.text.firstIndex(of: i)
                     if index != nil {
                         self.text.remove(at: index!)
                     }
@@ -110,7 +110,7 @@ class BaseTextView: UITextView {
             for i in (self.text)! {
                 let resultStr = String.init(i)
                 if (resultStr as NSString).length > 1 { // 表情的长度是2，字符个数是1，可以过滤表情
-                    let index = self.text.index(of: i)
+                    let index = self.text.firstIndex(of: i)
                     if index != nil {
                         self.text.remove(at: index!)
                     }
@@ -167,7 +167,7 @@ class BaseTextView: UITextView {
         //1.只允许输入数字和小数点
         for i in (self.tempText ?? "") {
             if "0123456789.".contains(i)==false {
-                let index = self.tempText?.index(of: i)
+                let index = self.tempText?.firstIndex(of: i)
                 if index != nil {
                     self.tempText?.remove(at: index!)
                 }
@@ -175,7 +175,7 @@ class BaseTextView: UITextView {
         }
         for i in newInputStr {
             if "0123456789.".contains(i)==false {
-                let index = newInputStr.index(of: i)
+                let index = newInputStr.firstIndex(of: i)
                 if index != nil {
                     newInputStr.remove(at: index!)
                 }
@@ -185,7 +185,7 @@ class BaseTextView: UITextView {
         // 2.限制小数点只能输入1个
         if (self.tempText?.contains(".") ?? false) {
             if newInputStr.contains(".") {
-                let index = newInputStr.index(of: ".")
+                let index = newInputStr.firstIndex(of: ".")
                 if index != nil {
                     newInputStr.remove(at: index!)
                 }

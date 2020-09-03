@@ -16,8 +16,9 @@ class BaseNavViewController: UINavigationController {
     //push时候自动隐藏bottomBar
     override open func pushViewController(_ viewController: UIViewController, animated: Bool) {
         
-        if children.count > 0 {
-            // push时隐藏tabBar
+        if viewControllers.count > 0 {
+//        if children.count > 0 {
+            // push时隐藏tabBar if是为了解决push回来时，没有底部导航的问题
             viewController.hidesBottomBarWhenPushed = true
         }
         super.pushViewController(viewController, animated: animated)

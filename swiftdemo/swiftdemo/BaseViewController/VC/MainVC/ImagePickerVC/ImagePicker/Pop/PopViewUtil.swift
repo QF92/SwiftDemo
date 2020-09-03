@@ -13,11 +13,11 @@ class PopViewUtil: NSObject {
         @objc var activite: UIActivityIndicatorView?
         
         @objc func showLoading() {
-            activite = UIActivityIndicatorView.init(style: .whiteLarge)
+            activite = UIActivityIndicatorView.init(style:UIActivityIndicatorView.Style.large)
             activite?.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-            activite?.center = (UIApplication.shared.keyWindow?.center)!
+            activite?.center = (UIApplication.shared.windows.first?.center)!
             activite?.color = UIColor.black
-            UIApplication.shared.keyWindow?.addSubview(activite!)
+            UIApplication.shared.windows.first?.addSubview(activite!)
             self.activite?.startAnimating()
         }
         @objc func stopLoading() {
@@ -28,7 +28,7 @@ class PopViewUtil: NSObject {
         
         //MARK: - Returns: 当前控制器
         @objc public static func getCurrentViewcontroller() -> UIViewController?{
-            let rootController = UIApplication.shared.keyWindow?.rootViewController
+            let rootController = UIApplication.shared.windows.first?.rootViewController
             if let tabController = rootController as? UITabBarController   {
                 if let navController = tabController.selectedViewController as? UINavigationController{
                     return navController.children.last

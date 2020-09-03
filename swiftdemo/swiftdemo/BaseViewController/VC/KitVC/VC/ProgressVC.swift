@@ -16,8 +16,8 @@ class ProgressVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        self.id_navTitle = "IDProgressView"
-        self.view.backgroundColor = UIColor.groupTableViewBackground
+        self.id_navTitle = "ProgressView"
+        self.view.backgroundColor = UIColor.systemGroupedBackground
         self.nibProgressView.id_value = 50
         
         // circleView的宽高是80

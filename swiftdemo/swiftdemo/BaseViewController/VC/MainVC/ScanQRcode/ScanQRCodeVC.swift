@@ -23,7 +23,7 @@ class ScanQRCodeVC: BaseViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
 
-            self.id_navTitle = "IDScanQrcode"
+            self.id_navTitle = "ScanQrcode"
             
             self.view.addSubview(tableView)
         }

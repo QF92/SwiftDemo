@@ -12,7 +12,7 @@ class BaseSelectVC: BaseViewController {
 
     lazy var scrollView: UIScrollView = {
             let scroll = UIScrollView.init(frame: self.view.bounds)
-            scroll.backgroundColor = UIColor.groupTableViewBackground
+            scroll.backgroundColor = UIColor.systemGroupedBackground
             return scroll
         }()
         lazy var selectView1: BaseSelectView = {
@@ -116,7 +116,7 @@ class BaseSelectVC: BaseViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             
-            self.id_navTitle = "IDSelectView"
+            self.id_navTitle = "SelectView"
 
             self.view.addSubview(self.scrollView)
             self.scrollView.addSubview(self.selectView1)

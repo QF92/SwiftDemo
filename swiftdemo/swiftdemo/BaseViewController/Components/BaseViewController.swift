@@ -72,7 +72,13 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
          self.view.backgroundColor = UIColor.white
-         self.automaticallyAdjustsScrollViewInsets = false
+        
+        if #available(iOS 11.0, *) {
+//        self.tableView.contentInsetAdjustmentBehavior = .never;
+            UIScrollView.appearance().contentInsetAdjustmentBehavior  = .never
+        }else {
+        self.automaticallyAdjustsScrollViewInsets = false;
+        }
          self.navigationController?.navigationBar.isHidden = true
          self.navigationController?.navigationBar.isTranslucent = false
          

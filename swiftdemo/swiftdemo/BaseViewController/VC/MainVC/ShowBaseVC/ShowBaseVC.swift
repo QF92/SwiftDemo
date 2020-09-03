@@ -43,10 +43,10 @@ class ShowBaseVC: BaseViewController {
         @objc func clickBtn() {
             DealistConfig.share.id_setupMainColor(color: UIColor.red)
             let tabbarVC = TabBarViewController()
-                tabbarVC.id_setupChildViewController(viewController: MainViewController(), image:  UIImage(named: "icn_nocolor_icn_components"), selectedImage: UIImage(named: "icn_color_icn_components"), title: "IDealist组件")
-                tabbarVC.id_setupChildViewController(viewController: UIKitViewController(), image:  UIImage(named: "icn_nocolor_icn_uikit"), selectedImage: UIImage(named: "icn_color_icn_uikit"), title: "IDealistUIKit")
-                tabbarVC.id_setupChildViewController(viewController: UnitViewController(), image:  UIImage(named: "icn_nocolor_icn_utils"), selectedImage: UIImage(named: "icn_color_icn_utils"), title: "IDealistUtils")
-            UIApplication.shared.keyWindow?.rootViewController = tabbarVC
+                tabbarVC.id_setupChildViewController(viewController: MainViewController(), image:  UIImage(named: "icn_nocolor_icn_components"), selectedImage: UIImage(named: "icn_color_icn_components"), title: "Dealist组件")
+                tabbarVC.id_setupChildViewController(viewController: UIKitViewController(), image:  UIImage(named: "icn_nocolor_icn_uikit"), selectedImage: UIImage(named: "icn_color_icn_uikit"), title: "UIKit")
+                tabbarVC.id_setupChildViewController(viewController: UnitViewController(), image:  UIImage(named: "icn_nocolor_icn_utils"), selectedImage: UIImage(named: "icn_color_icn_utils"), title: "DealistUtils")
+            UIApplication.shared.windows.first?.rootViewController = tabbarVC
             
             // 解决ios12 pop时tabbar的闪烁问题
             UITabBar.appearance().isTranslucent = false

@@ -59,7 +59,7 @@ class ToastUtils: Operation {
 
          init(msg: String,onView:UIView? = nil,success: ToastUtilsImageType? = nil,duration:CGFloat? = nil, position: ToastPosition? = .middle) {
              
-             self.superComponent = onView ?? (UIApplication.shared.keyWindow ?? UIView())
+             self.superComponent = onView ?? (UIApplication.shared.windows.first ?? UIView())
              self.showSuccessToast = success
              self.duration = duration ?? 1.5
              self.position = position ?? ToastPosition.middle

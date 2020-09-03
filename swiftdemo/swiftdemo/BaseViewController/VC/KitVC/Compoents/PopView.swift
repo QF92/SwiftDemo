@@ -135,7 +135,7 @@ class PopView: UIView {
         }
         
         func animationShow() {
-            let window = UIApplication.shared.keyWindow
+            let window = UIApplication.shared.windows.first
             self.frame = window?.bounds ?? CGRect.zero
             window?.addSubview(self)
             // 设置右上角为transform的起点（默认是中心点）

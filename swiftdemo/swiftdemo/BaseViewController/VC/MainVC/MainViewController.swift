@@ -16,7 +16,7 @@ override func viewDidLoad() {
          // Do any additional setup after loading the view.
     self.view.addSubview(tableView)
     self.tableView.contentInset = UIEdgeInsets.init(top: 10, left: 0, bottom: 0, right: 0)
-    self.id_navTitle = "IDealist"
+    self.id_navTitle = "Dealist"
            
     self.id_rightBtn.setImage(UIImage(named: "icn_icn_imfomation"), for: .normal)
     
@@ -151,7 +151,7 @@ override func viewDidLoad() {
     let imageArr = ["icn_icn_dialog", "icn_icn_toast", "icn_icn_loading", "icn_icn_refresh", "icn_icn_emptyview", "icn_icn_update", "icn_icn_image", "icn_icn_scanning", "icn_icn_view"]
  
     override func rightBtnClick() {
-//        let vc = IDInfoViewController.init(nibName: "IDInfoViewController", bundle: nil)
+//        let vc = DInfoViewController.init(nibName: "InfoViewController", bundle: nil)
 //        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

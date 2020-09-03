@@ -10,7 +10,7 @@
 @implementation BundleTools
 + (NSBundle*)getCurrentBundle {
     NSBundle *podBundle = [NSBundle bundleForClass: self.class];
-    NSURL *bundleURL = [podBundle URLForResource: @"IDealist" withExtension: @"bundle"];
+    NSURL *bundleURL = [podBundle URLForResource: @"Dealist" withExtension: @"bundle"];
     NSBundle *bundle = NSBundle.mainBundle;
     if (bundleURL != nil) {
         bundle = [NSBundle bundleWithURL:bundleURL];

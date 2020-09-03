@@ -101,7 +101,7 @@ class DialogCustomView: UIView {
             }
         }
         @objc func clickTitle() {
-            UIApplication.shared.keyWindow?.endEditing(true)
+            UIApplication.shared.windows.first?.endEditing(true)
         }
         func initEventHendle() {
             

@@ -98,6 +98,11 @@ public extension UIView {
         }
     }
     
+    /// Bottom of view.
+    var id_bottom: CGFloat {
+        return frame.maxY
+    }
+    
     func id_addGradientLayer(gradientColors: [UIColor],gradientDirection direction: UIViewGradientDirection, gradientFrame: CGRect? = nil) {
         
         //创建并实例化CAGradientLayer

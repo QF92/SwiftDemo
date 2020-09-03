@@ -7,6 +7,43 @@
 //
 
 import UIKit
+
+func isiPhoneX() ->Bool {
+    let screenHeight = UIScreen.main.nativeBounds.size.height;
+    if screenHeight == 2436 || screenHeight == 1792 || screenHeight == 2688 || screenHeight == 1624 {
+        return true
+    }
+    return false
+}
+
+/// 判断是否是`iPhoneX`系列，此系列有`safeArea`的概念    // - Returns: true代表是`iPhoneX`系列
+public func iPhoneX() -> Bool {
+    // 利用safeAreaInsets.bottom > 0 来判断是否是iPhoneX系列
+    guard let w = UIApplication.shared.delegate?.window else {
+        return false
+    }
+    guard #available(iOS 11.0, *) else {
+        return false
+    }
+    
+    return w!.safeAreaInsets.bottom > 0.0
+}
+
+/// App状态栏的高度
+var kStatusBarHeight: CGFloat {
+    return iPhoneX() ? 40.0 : 20
+}
+
+/// App导航栏高度，包含状态栏(20/44)
+var kNavigatioHeight: CGFloat {
+    return iPhoneX() ? 88.0 : 64.0
+}
+
+/// App`TabBar`的高度
+var kTabBarHeight: CGFloat {
+    return iPhoneX() ? 83.0 : 49.0
+}
+
 /// 屏幕宽度
 var KScreenHeight = UIScreen.main.bounds.height
 /// 屏幕高度
@@ -20,13 +57,6 @@ var KTabBarHeight: CGFloat = UIDevice.id_isX() == true ? 83:49
 /// iphonex 底部间距
 var IphoneXBottomSpace: CGFloat = UIDevice.id_isX() == true ? 34:0
 
-func isiPhoneX() ->Bool {
-    let screenHeight = UIScreen.main.nativeBounds.size.height;
-    if screenHeight == 2436 || screenHeight == 1792 || screenHeight == 2688 || screenHeight == 1624 {
-        return true
-    }
-    return false
-}
 
 var dialogWidth: CGFloat = 300
 
@@ -61,7 +91,7 @@ func HDViewsBorder(_ view:UIView, borderWidth:CGFloat, borderColor:UIColor?=nil,
     view.layer.masksToBounds = true
 }
 
-let HDWindow = UIApplication.shared.keyWindow
+let HDWindow = UIApplication.shared.windows.first
 let HDNotificationCenter = NotificationCenter.default
 let HDUserDefaults = UserDefaults.standard
 
@@ -76,11 +106,10 @@ func keywindows() -> UIWindow? {
         if windowScene.activationState == .foregroundActive {
          window = windowScene.windows.first
       break
-       }
-      }
-         return window
-      }else{
-         return  UIApplication.shared.keyWindow
-       }
-     
+            }
+        }
+        return window
+     }else{
+        return UIApplication.shared.windows.first
     }
+}

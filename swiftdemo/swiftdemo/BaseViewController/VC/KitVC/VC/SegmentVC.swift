@@ -22,12 +22,12 @@ class SegmentVC: BaseViewController {
        override func viewDidLoad() {
            super.viewDidLoad()
            
-           self.id_navTitle = "IDSegmentedView"
-           self.view.backgroundColor = UIColor.groupTableViewBackground
+           self.id_navTitle = "SegmentedView"
+           self.view.backgroundColor = UIColor.systemGroupedBackground
 
            self.seg.setImage(UIImage(named: "ic_new"), forSegmentAt: 0)
            
-           self.seg1.id_setSegmentStyle(normalColor: UIColor.white, selectedColor: UIColor.red, dividerColor: UIColor.groupTableViewBackground)
+           self.seg1.id_setSegmentStyle(normalColor: UIColor.white, selectedColor: UIColor.red, dividerColor: UIColor.systemGroupedBackground)
            
            self.view.addSubview(self.selectView)
            

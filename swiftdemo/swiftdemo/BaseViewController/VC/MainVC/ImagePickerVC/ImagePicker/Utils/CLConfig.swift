@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-let CLWindow = UIApplication.shared.keyWindow
+let CLWindow = UIApplication.shared.windows.first
 
 
 let SaveAreaHeight: CGFloat = UIDevice.id_isX() == true ? 34.0:0

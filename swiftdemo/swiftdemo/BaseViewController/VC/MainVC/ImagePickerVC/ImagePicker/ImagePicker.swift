@@ -117,6 +117,7 @@ class ImagePicker: NSObject,UIImagePickerControllerDelegate,UINavigationControll
                             self.imagePickerClouse!(assetArr,cutImage)
                         }
                     }
+                    photo.modalPresentationStyle = .fullScreen
                     self.superVC?.present(photo, animated: true, completion: nil)
                 }
             })
@@ -413,7 +414,7 @@ class ImagePicker: NSObject,UIImagePickerControllerDelegate,UINavigationControll
         
         // 获取当前控制器
         func getCurrentViewcontroller() -> UIViewController?{
-            let rootController = UIApplication.shared.keyWindow?.rootViewController
+            let rootController = UIApplication.shared.windows.first?.rootViewController
             if let tabController = rootController as? UITabBarController   {
                 if let navController = tabController.selectedViewController as? UINavigationController{
                     return navController.children.last

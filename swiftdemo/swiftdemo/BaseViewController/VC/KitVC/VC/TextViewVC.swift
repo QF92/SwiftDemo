@@ -26,7 +26,7 @@ class TextViewVC: BaseViewController {
         super.viewDidLoad()
 
         self.id_navTitle = "TextView"
-        self.view.backgroundColor = UIColor.groupTableViewBackground
+        self.view.backgroundColor = UIColor.systemGroupedBackground
         
         
         self.view.addSubview(self.textView2)

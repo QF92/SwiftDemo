@@ -22,7 +22,7 @@ class SearchBarVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.id_navTitle = "IDSearchBar"
+        self.id_navTitle = "SearchBar"
         
         self.view.backgroundColor = UIColor.init(redValue: 245, green: 245, blue: 249, alpha: 1)
         

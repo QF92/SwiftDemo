@@ -330,7 +330,9 @@ extension BaseButton{
                  let flag = titleSize.width + (self.currentImage?.size.width ?? 0)
                  titleOrigin.x = buttonWidth - flag - self.titleEdgeInsets.right - self.contentEdgeInsets.right - id_imageTitleSpace * 0.5
                  break
-             }
+             @unknown default:
+                break
+            }
              return CGRect.init(origin: titleOrigin, size: titleSize)
          }
          
@@ -583,7 +585,9 @@ extension BaseButton{
              case .fill: // 填充
                  titleOrigin.x = self.contentEdgeInsets.left + self.titleEdgeInsets.left
                  break
-             }
+             @unknown default:
+                break
+            }
              
              if (titleSize.height > contentRect.size.height - self.titleEdgeInsets.top - self.titleEdgeInsets.bottom) {
                  titleSize.height = contentRect.size.height - self.titleEdgeInsets.top - self.titleEdgeInsets.bottom

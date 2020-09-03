@@ -80,8 +80,8 @@ class CLImageAmplifyView: UIView {
     
     @objc static func setupAmplifyViewWithUITapGestureRecognizer(tap:UITapGestureRecognizer,superView:UIView,originImageAsset:PHAsset,isSingleChoose:Bool,singleModelImageCanEditor:Bool,isSelect: Bool) -> CLImageAmplifyView{
         
-        let amplifyView = CLImageAmplifyView.init(frame: (UIApplication.shared.keyWindow?.bounds)!)
-        UIApplication.shared.keyWindow?.addSubview(amplifyView)
+        let amplifyView = CLImageAmplifyView.init(frame: (UIApplication.shared.windows.first?.bounds)!)
+        UIApplication.shared.windows.first?.addSubview(amplifyView)
         
         amplifyView.setupUIWithUITapGestureRecognizer(tap: tap, superView: superView,originImageAsset:originImageAsset,isSingleChoose:isSingleChoose,singleModelImageCanEditor:singleModelImageCanEditor,isSelect: isSelect)
         
@@ -90,7 +90,7 @@ class CLImageAmplifyView: UIView {
     
     func initLayout() {
         
-        let win = UIApplication.shared.keyWindow
+        let win = UIApplication.shared.windows.first
 
         self.bottomView.translatesAutoresizingMaskIntoConstraints = false
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -164,7 +164,7 @@ class CLImageAmplifyView: UIView {
         self.originImageAsset = originImageAsset
         
         //scrollView作为背景
-        self.scrollView.frame = (UIApplication.shared.keyWindow?.bounds)!
+        self.scrollView.frame = (UIApplication.shared.windows.first?.bounds)!
         self.scrollView.backgroundColor = UIColor.black
         self.scrollView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(self.clickBgView(tapBgView:))))
         
@@ -204,7 +204,7 @@ class CLImageAmplifyView: UIView {
                     })
                 }
 
-                self.imageRequestID = self.manager.requestImageData(for: originImageAsset, options: option, resultHandler: { (imageData, string, imageOrientation, info) in
+                self.imageRequestID = self.manager.requestImageDataAndOrientation(for: originImageAsset, options: option, resultHandler: { (imageData, string, imageOrientation, info) in
                     if imageData != nil {
                         self.lastImageView.image = UIImage.init(data: imageData!)
                         self.circleBtn.removeFromSuperview()

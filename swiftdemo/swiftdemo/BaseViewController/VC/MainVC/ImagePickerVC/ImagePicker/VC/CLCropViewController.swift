@@ -59,7 +59,11 @@ class CLCropViewController: BaseImagePickerViewController {
         
         self.view.addSubview(self.scrollView)
         self.view.backgroundColor = UIColor.black
-        self.automaticallyAdjustsScrollViewInsets = false
+        if #available(iOS 11.0, *) {
+            UIScrollView.appearance().contentInsetAdjustmentBehavior  = .never
+        }else {
+            self.automaticallyAdjustsScrollViewInsets = false;
+        }
         self.view.layer.masksToBounds = true
         
         if originalImage != nil {
@@ -171,7 +175,7 @@ class CLCropViewController: BaseImagePickerViewController {
                     })
                 }
                 
-                self.imageRequestID = self.manager.requestImageData(for: self.asset!, options: option, resultHandler: { (imageData, string, imageOrientation, info) in
+                self.imageRequestID = self.manager.requestImageDataAndOrientation(for: self.asset!, options: option, resultHandler: { (imageData, string, imageOrientation, info) in
                     if imageData != nil {
                         self.imageView?.image = UIImage.init(data: imageData!)
                         self.circleBtn?.removeFromSuperview()

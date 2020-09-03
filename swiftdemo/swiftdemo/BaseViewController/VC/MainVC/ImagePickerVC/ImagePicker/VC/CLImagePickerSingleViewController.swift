@@ -177,7 +177,7 @@ class CLImagePickerSingleViewController: BaseImagePickerViewController {
     }
     // 预览
     @IBAction func clickLookBtn(_ sender: Any) {
-        let previewVC = IDPreviewViewController.init(nibName: "IDPreviewViewController", bundle: BundleUtil.getCurrentBundle())
+        let previewVC = IDPreviewViewController.init(nibName: "PreviewViewController", bundle: BundleUtil.getCurrentBundle())
         
         var array = [PreviewModel]()
         for item in CLPickersTools.instence.getChoosePictureArray() {
