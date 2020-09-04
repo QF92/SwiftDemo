@@ -18,13 +18,13 @@ public enum QFHTTPMethod {
 
 /// API interface protocol
 public protocol QFAPIProtocol {
-    /// API URL address
+    /// API URL address  URL地址
     var url: String { get }
-    /// API description information
+    /// API description information  API描述信息
     var description: String { get }
-    /// API additional information, eg: Author | Note...
+    /// API additional information, eg: Author | Note...  API附加信息，例如:作者| Note…
     var extra: String? { get }
-    /// Type representing HTTP methods.
+    /// Type representing HTTP methods. 类型表示HTTP方法
     var method: QFHTTPMethod { get }
 }
 
