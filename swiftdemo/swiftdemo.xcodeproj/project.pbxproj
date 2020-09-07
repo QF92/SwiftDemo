@@ -43,11 +43,9 @@
 		08AAC2BC24FCDF01000B3044 /* DialogCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC2BB24FCDF01000B3044 /* DialogCustomView.swift */; };
 		08AAC2BE24FCE118000B3044 /* DialogImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC2BD24FCE118000B3044 /* DialogImageVC.swift */; };
 		08AAC2C924FCE67E000B3044 /* ic_toast_success2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AAC2C024FCE67D000B3044 /* ic_toast_success2@3x.png */; };
-		08AAC2CA24FCE67E000B3044 /* icn_icn_fail2.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AAC2C124FCE67E000B3044 /* icn_icn_fail2.png */; };
 		08AAC2CB24FCE67E000B3044 /* icn_icn_fail2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AAC2C224FCE67E000B3044 /* icn_icn_fail2@3x.png */; };
 		08AAC2CC24FCE67E000B3044 /* icn_icn_fail2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AAC2C324FCE67E000B3044 /* icn_icn_fail2@2x.png */; };
 		08AAC2CD24FCE67E000B3044 /* ic_toast_success2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AAC2C424FCE67E000B3044 /* ic_toast_success2@2x.png */; };
-		08AAC2CE24FCE67E000B3044 /* ic_toast_success2.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AAC2C524FCE67E000B3044 /* ic_toast_success2.png */; };
 		08AAC2D024FCE67E000B3044 /* icon_sign2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AAC2C724FCE67E000B3044 /* icon_sign2@2x.png */; };
 		08AAC2D124FCE67E000B3044 /* icon_sign2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AAC2C824FCE67E000B3044 /* icon_sign2@3x.png */; };
 		08AAC2D424FCE6D7000B3044 /* ic_back_grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AAC2D224FCE6D7000B3044 /* ic_back_grey@2x.png */; };
@@ -360,11 +358,9 @@
 		08AAC2BB24FCDF01000B3044 /* DialogCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCustomView.swift; sourceTree = "<group>"; };
 		08AAC2BD24FCE118000B3044 /* DialogImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogImageVC.swift; sourceTree = "<group>"; };
 		08AAC2C024FCE67D000B3044 /* ic_toast_success2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_toast_success2@3x.png"; sourceTree = "<group>"; };
-		08AAC2C124FCE67E000B3044 /* icn_icn_fail2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_icn_fail2.png; sourceTree = "<group>"; };
 		08AAC2C224FCE67E000B3044 /* icn_icn_fail2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_icn_fail2@3x.png"; sourceTree = "<group>"; };
 		08AAC2C324FCE67E000B3044 /* icn_icn_fail2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_icn_fail2@2x.png"; sourceTree = "<group>"; };
 		08AAC2C424FCE67E000B3044 /* ic_toast_success2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_toast_success2@2x.png"; sourceTree = "<group>"; };
-		08AAC2C524FCE67E000B3044 /* ic_toast_success2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_toast_success2.png; sourceTree = "<group>"; };
 		08AAC2C724FCE67E000B3044 /* icon_sign2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_sign2@2x.png"; sourceTree = "<group>"; };
 		08AAC2C824FCE67E000B3044 /* icon_sign2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_sign2@3x.png"; sourceTree = "<group>"; };
 		08AAC2D224FCE6D7000B3044 /* ic_back_grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_back_grey@2x.png"; sourceTree = "<group>"; };
@@ -842,11 +838,9 @@
 				08AAC2D224FCE6D7000B3044 /* ic_back_grey@2x.png */,
 				08AAC2D324FCE6D7000B3044 /* ic_back_grey@3x.png */,
 				08AAC2C024FCE67D000B3044 /* ic_toast_success2@3x.png */,
-				08AAC2C124FCE67E000B3044 /* icn_icn_fail2.png */,
 				08AAC2C224FCE67E000B3044 /* icn_icn_fail2@3x.png */,
 				08AAC2C324FCE67E000B3044 /* icn_icn_fail2@2x.png */,
 				08AAC2C424FCE67E000B3044 /* ic_toast_success2@2x.png */,
-				08AAC2C524FCE67E000B3044 /* ic_toast_success2.png */,
 				08AAC2C724FCE67E000B3044 /* icon_sign2@2x.png */,
 				08AAC2C824FCE67E000B3044 /* icon_sign2@3x.png */,
 			);
@@ -1352,10 +1346,10 @@
 			isa = PBXGroup;
 			children = (
 				08AAC5222500F75F000B3044 /* QFAPI.swift */,
-				08AAC5242500F7AC000B3044 /* QFMultipartData.swift */,
 				08AAC5262500F7E4000B3044 /* QFNetworking.swift */,
 				08AAC5282500F812000B3044 /* QFNetworkingError.swift */,
 				08AAC52A2500F83A000B3044 /* QFNetworkingOC.swift */,
+				08AAC5242500F7AC000B3044 /* QFMultipartData.swift */,
 			);
 			path = QFNetWork;
 			sourceTree = "<group>";
@@ -1542,7 +1536,6 @@
 				08AAC30124FCF3B0000B3044 /* icon_sign@2x.png in Resources */,
 				08AAC3FD24FE1FCF000B3044 /* ic_pen_grey@3x.png in Resources */,
 				08AAC3FF24FE1FCF000B3044 /* clr_orange@3x.png in Resources */,
-				08AAC2CA24FCE67E000B3044 /* icn_icn_fail2.png in Resources */,
 				08AAC44324FE1FCF000B3044 /* photo_sel_photoPicker2.png in Resources */,
 				08AAC2FE24FCF3B0000B3044 /* icn_icn_fail.png in Resources */,
 				08AAC2D124FCE67E000B3044 /* icon_sign2@3x.png in Resources */,
@@ -1612,7 +1605,6 @@
 				08AAC41024FE1FCF000B3044 /* clr_orange@2x.png in Resources */,
 				08AAC35824FDF426000B3044 /* MessageStyleView.xib in Resources */,
 				08AAC41424FE1FCF000B3044 /* icn_icn_back@2x.png in Resources */,
-				08AAC2CE24FCE67E000B3044 /* ic_toast_success2.png in Resources */,
 				08AAC42124FE1FCF000B3044 /* ic_erase@3x.png in Resources */,
 				08AAC33924FDE31C000B3044 /* ic_load_failure@2x.png in Resources */,
 				08AAC40224FE1FCF000B3044 /* icn_icn_cam.png in Resources */,

@@ -366,7 +366,8 @@ extension CLImageAmplifyView: CAAnimationDelegate {
             if urlstr.contains(".gif") || urlstr.contains(".GIF") {
                 let option = PHImageRequestOptions()
                 option.isSynchronous = true
-                self.manager.requestImageData(for: originImageAsset, options: option, resultHandler: { (gifImgData, str, imageOrientation, info) in
+                
+                self.manager.requestImageDataAndOrientation(for: originImageAsset, options: option, resultHandler: { (gifImgData, string, imageOrientation, info) in
                     if gifImgData != nil {
                         self.createKeyFram(imgData: gifImgData!)
                     }

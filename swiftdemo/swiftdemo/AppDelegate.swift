@@ -22,9 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = OtherTabBarVC.init()
         
         let tabbarVC = TabBarViewController()
-            tabbarVC.id_setupChildViewController(viewController: MainViewController(), image:  UIImage(named: "icn_nocolor_icn_components"), selectedImage: UIImage(named: "icn_color_icn_components"), title: "IDealist组件")
-            tabbarVC.id_setupChildViewController(viewController: UIKitViewController(), image:  UIImage(named: "icn_nocolor_icn_uikit"), selectedImage: UIImage(named: "icn_color_icn_uikit"), title: "IDealistUIKit")
-            tabbarVC.id_setupChildViewController(viewController: UnitViewController(), image:  UIImage(named: "icn_nocolor_icn_utils"), selectedImage: UIImage(named: "icn_color_icn_utils"), title: "IDealistUtils")
+            tabbarVC.id_setupChildViewController(viewController: MainViewController(), image:  UIImage(named: "icn_nocolor_icn_components"), selectedImage: UIImage(named: "icn_color_icn_components"), title: "理想组件")
+            tabbarVC.id_setupChildViewController(viewController: UIKitViewController(), image:  UIImage(named: "icn_nocolor_icn_uikit"), selectedImage: UIImage(named: "icn_color_icn_uikit"), title: "UIKit")
+            tabbarVC.id_setupChildViewController(viewController: UnitViewController(), image:  UIImage(named: "icn_nocolor_icn_utils"), selectedImage: UIImage(named: "icn_color_icn_utils"), title: "Utils")
         self.window?.rootViewController = tabbarVC
         self.window?.makeKeyAndVisible()
         // 解决ios12 pop时tabbar的闪烁问题

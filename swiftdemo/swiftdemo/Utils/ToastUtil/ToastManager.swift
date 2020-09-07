@@ -12,8 +12,8 @@ class ToastManager{
     public static let share = ToastManager()
 
     public var successImage = UIImage(named: "ic_toast_success", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
-    public var failImage = UIImage(named: "icn_icn_fail", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
-    public var warnImage = UIImage(named: "icon_sign", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
+    public var failImage = UIImage(named:"icn_icn_fail", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
+    public var warnImage = UIImage(named:"icon_sign", in: BundleUtil.getCurrentBundle(), compatibleWith: nil)
 
     public var bgColor = UIColor.black
     public var textColor = UIColor.white

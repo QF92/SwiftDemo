@@ -6,6 +6,8 @@
 //  Copyright © 2020 qf. All rights reserved.
 //
 
+
+//上传图片Data
 import Foundation
 /// 常见数据类型的`MIME Type`
 public enum QFDataMimeType: String {

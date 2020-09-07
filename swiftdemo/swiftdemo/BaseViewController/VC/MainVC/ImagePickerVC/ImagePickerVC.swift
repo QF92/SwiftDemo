@@ -103,12 +103,13 @@ class ImagePickerVC: BaseViewController {
             }
         }
         if btn.tag == 101 {
+            picker2.onlyChooseImageOrVideo = true
             picker2.id_setupImagePickerWith(maxImagesCount: 10) {
                 (assrtArr, img) in
             }
         }
         if btn.tag == 102 {
-            picker3.singleImageChooseType = .singlePicture
+            picker3.singleImageChooseType = .singlePictureCrop
             picker3.id_setupImagePickerWith(maxImagesCount: 10) {
                 (assrtArr, img) in
             }

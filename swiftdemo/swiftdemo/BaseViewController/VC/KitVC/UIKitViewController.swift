@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 class UIKitViewController: BaseViewController {
 
      override func viewDidLoad() {
@@ -17,6 +17,25 @@ class UIKitViewController: BaseViewController {
          self.tableView.contentInset = UIEdgeInsets.init(top: 10, left: 0, bottom: 0, right: 0)
          self.id_navTitle = "Dealist"
          self.id_rightBtn.setImage(UIImage(named: "icn_icn_imfomation"), for: .normal)
+        
+        let imagevie = UIImageView.init(frame: CGRect.init(x: 100, y: 600, width: 100, height: 100))
+        self.view.addSubview(imagevie)
+        let url = URL(string: "http://mvimg2.meitudata.com/55fe3d94efbc12843.jpg")
+//        imagevie.kf.setImage(with: url)
+        
+        let placeholderImage = UIImage(named: "ic_ssearch")
+        imagevie.kf.setImage(with: url, placeholder: placeholderImage)
+        
+        imagevie.kf.setImage(with: url, placeholder: placeholderImage, options: nil, progressBlock: nil) { (result) in
+           
+        }
+//        imagevie.kf.setImage(with: <#T##ImageDataProvider?#>, placeholder: <#T##Placeholder?#>, options: <#T##KingfisherOptionsInfo?#>, progressBlock: <#T##DownloadProgressBlock?##DownloadProgressBlock?##(Int64, Int64) -> Void#>, completionHandler: <#T##((Result<RetrieveImageResult, KingfisherError>) -> Void)?##((Result<RetrieveImageResult, KingfisherError>) -> Void)?##(Result<RetrieveImageResult, KingfisherError>) -> Void#>)
+//
+//
+//        imagevie.kf.setImage(with: <#T##Resource?#>, placeholder: <#T##Placeholder?#>, options: <#T##KingfisherOptionsInfo?#>, progressBlock: <#T##DownloadProgressBlock?##DownloadProgressBlock?##(Int64, Int64) -> Void#>) { (<#Result<RetrieveImageResult, KingfisherError>#>) in
+//            <#code#>
+//        }
+
      }
     
      lazy var tableView: UITableView = {
@@ -33,8 +52,8 @@ class UIKitViewController: BaseViewController {
              return tableView
          }()
          
-         let dataArr = ["按钮 Button", "文本 Label", "图片 Image", "气泡 PopView","文本输入框 TextField", "多行文本输入框 IDTextView", "搜索框 SearchBar","开关按钮Switch","选择控件 SegmentedControl", "进度条 ProgressView","网络请求"]
-         let imageArr = ["icn_icn_button", "icn_icn_label", "icn_icn_image", "icn_icn_popview", "icn_icn_textfield", "icn_icn_textview", "icn_icn_searchbar", "icn_icn_switch", "icn_icn_segmentview", "icn_icn_progressview", "icn_icn_progressview"]
+         let dataArr = ["按钮 Button", "文本 Label", "图片 Image", "气泡 PopView","文本输入框 TextField", "多行文本输入框 IDTextView", "搜索框 SearchBar","开关按钮Switch","选择控件 SegmentedControl", "进度条 ProgressView","网络请求","QF网络请求"]
+         let imageArr = ["icn_icn_button", "icn_icn_label", "icn_icn_image", "icn_icn_popview", "icn_icn_textfield", "icn_icn_textview", "icn_icn_searchbar", "icn_icn_switch", "icn_icn_segmentview", "icn_icn_progressview", "icn_icn_progressview", "icn_icn_progressview"]
          
          
          override func rightBtnClick() {
@@ -108,6 +127,10 @@ class UIKitViewController: BaseViewController {
                 let vc = NetWorkVC()
                  self.navigationController?.pushViewController(vc, animated: true)
              }
+            if indexPath.section == 11 {
+               let vc = QFNetWorkVC()
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
          }
          func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
              return 5

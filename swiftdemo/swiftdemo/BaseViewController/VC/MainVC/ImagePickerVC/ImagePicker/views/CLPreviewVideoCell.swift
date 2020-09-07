@@ -81,6 +81,7 @@ class CLPreviewVideoCell: UICollectionViewCell {
         if self.model.phAsset == nil {
             return
         }
+//        获取视频
         let manager = PHImageManager.default()
         let videoRequestOptions = PHVideoRequestOptions()
         videoRequestOptions.deliveryMode = .automatic

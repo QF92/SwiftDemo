@@ -239,7 +239,7 @@ class ImagePicker: NSObject,UIImagePickerControllerDelegate,UINavigationControll
             }
         }
         
-        // 获取原图的方法  同步
+        // 获取原图的方法  同步 或者。获取图片,获取视频首帧
         @objc static func getAssetOrigin(asset:PHAsset,dealImageSuccess:@escaping (UIImage?,[AnyHashable:Any]?) -> (),dealImageFailed:@escaping () -> ()) -> Void {
             //获取原图
             let manager = PHImageManager.default()
@@ -258,6 +258,7 @@ class ImagePicker: NSObject,UIImagePickerControllerDelegate,UINavigationControll
             }
 
             manager.requestImage(for: asset, targetSize:PHImageManagerMaximumSize, contentMode: .aspectFit, options: option) { (originImage, info) in
+                //originImage就是图片
                 dealImageSuccess(originImage,info)
             }
         }
