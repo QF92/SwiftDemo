@@ -29,6 +29,7 @@ class DialogTestVC: BaseViewController {
         }
     }
     //MARK: - UITableViewDelegate,UITableViewDataSource
+//使用 extension 来为现有的类型添加功能，比如新的方法和计算属性。你可以使用扩展让某个在别处声明的类型来遵守某个协议，这同样适用于从外部库或者框架引入的类型。
 extension DialogTestVC:UITableViewDelegate,UITableViewDataSource{
         func numberOfSections(in tableView: UITableView) -> Int {
             return dataArr.count

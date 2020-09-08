@@ -111,7 +111,7 @@ public extension UIView {
         if let gradientFrame = gradientFrame {
             gradientLayer.frame = gradientFrame
         }else {
-            gradientLayer.frame = CGRect(x: 0, y: 0, width: id_width, height: id_height)
+            gradientLayer.frame = CGRect.init(x: 0, y: 0, width: id_width, height: id_height)
         }
         
         gradientLayer.colors = gradientColors.map({ (color) -> CGColor in

@@ -212,10 +212,10 @@ class ImagePicker: NSObject,UIImagePickerControllerDelegate,UINavigationControll
             
             if asset.mediaType == .video {
                 let manager = PHImageManager.default()
-                let videoRequestOptions = PHVideoRequestOptions()
+                let videoRequestOptions = PHVideoRequestOptions()  //获取视频
                 videoRequestOptions.deliveryMode = .automatic
                 videoRequestOptions.version = .current
-                videoRequestOptions.isNetworkAccessAllowed = true
+                videoRequestOptions.isNetworkAccessAllowed = true  //使用的时候,尽量将option.isNetworkAccessAllowed = true打开,允许下载iCloud的图片和视频,否则会照成crash.这块当时给我弄的很无奈,因为我好几个地方都上传图片,改了好几遍.
                 
                 videoRequestOptions.progressHandler = {
                     (progress, error, stop, info) in

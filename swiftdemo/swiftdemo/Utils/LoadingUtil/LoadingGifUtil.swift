@@ -15,7 +15,7 @@ class LoadingGifUtil: NSObject {
         }()
         lazy var coverView: UIView = {
             let cover = UIView()
-            cover.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            cover.frame = CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
             cover.backgroundColor = UIColor.black
             cover.alpha = 0.1
             return cover

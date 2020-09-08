@@ -8,6 +8,22 @@
 
 import UIKit
 
+//枚举的关联值是实际值，并不是原始值的另一种表达方法。实际上，如果没有比较有意义的原始值，你就不需要提供原始值。
+enum Suit {
+    case spades, hearts, diamonds, clubs
+    func simpleDescription() -> String {
+        switch self {
+        case .spades:
+            return "spades"
+        case .hearts:
+            return "hearts"
+        case .diamonds:
+            return "diamonds"
+        case .clubs:
+            return "clubs"
+        }
+    }
+}
 class QFNetWorkVC: BaseViewController {
 
     override func viewDidLoad() {
@@ -244,8 +260,120 @@ class QFNetWorkVC: BaseViewController {
         }
         
         greet(person: "BOb", day: "Tuesday")
-    }
-    
-    
-}
+        
+        
+//        使用元组来生成复合值，比如让一个函数返回多个值。该元组的元素可以用名称或数字来获取。
+        
+        func calculateStatistics(scores:[Int]) -> (min:Int, max: Int, sum: Int){
+            var  min = scores[0]
+            var  max = scores[0]
+            var  sum = 0
+            
+            for score in scores {
+                if score > max{
+                    max = score
+                }else if score < min{
+                    min = score
+                }
+                sum += score
+            }
+            
+            return (min,max, sum)
+        }
+        let statistics = calculateStatistics(scores:[5,3,100,3,9])
+        print(statistics.sum , statistics.2)
 
+        
+//        函数可以嵌套。被嵌套的函数可以访问外侧函数的变量，你可以使用嵌套函数来重构一个太长或者太复杂的函数
+        func returnFifteen()-> Int{
+            var  y = 10
+            func add(){
+                y += 5
+            }
+            add()
+            
+            return y
+        }
+        returnFifteen()
+        
+//        函数是第一等类型，这意味着函数可以作为另一个函数的返回值
+        func makeIncrementer() -> ((Int)->Int){
+            func addone(number: Int) -> Int{
+                return 1 + number
+            }
+            return addone
+        }
+        var  increment = makeIncrementer()
+        increment(7)
+        
+       // 函数也可以当作参数传入另一个函数
+        func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
+            for item in list {
+                if condition(item) {
+                    return true
+                }
+            }
+            return false
+        }
+        func lessThanTen(number: Int) -> Bool {
+            return number < 10
+        }
+        var numbers = [20, 19, 7, 12]
+        hasAnyMatches(list: numbers, condition: lessThanTen)
+        
+//        函数实际上是一种特殊的闭包:它是一段能之后被调取的代码。闭包中的代码能访问闭包作用域中的变量和函数，即使闭包是在一个不同的作用域被执行的——你已经在嵌套函数的例子中看过了。你可以使用 {} 来创建一个匿名闭包。使用 in 将参数和返回值类型的声明与闭包函数体进行分离。
+        
+        numbers.map({
+            (number: Int) -> Int in
+            let result = 3 * number
+            return result
+        })
+        
+        
+        //swift 提供了便捷的快速排序数组、字典的函数 sorted( )。$0 来表示闭包的第一个参数，$1 来表示第二个，以此类推，in 也可以省略
+       let dict = ["1": "a", "3": "c", "2": "b", "5": "e", "4": "d", "6": "f"]
+        // 根据 key
+        let key1 = dict.sorted{$0.0 < $1.0}
+        // 根据 value
+       let key2 = dict.sorted{$0.1 < $1.1}
+
+        // 进一步省略参数
+       let key3 =  dict.sorted(by: <)
+       let key4 = dict.sorted(by: >)
+        
+        
+        let sortedNumbers = numbers.sorted { $0 > $1 }
+        print(sortedNumbers)
+
+    //        对象和类。  //使用 class 和类名来创建一个类。类中属性的声明和常量、变量声明一样，唯一的区别就是它们的上下文是类。同样，方法和函数声明也一样。
+ }
+}
+class NameShape{
+            var numberOfSides:Int = 0
+            var name: String
+
+            init(name: String) {
+                self.name = name
+            }
+           func simpleDescription() -> String {
+                return "A shape with \(numberOfSides) sides."
+            }
+    }
+
+class Square: NameShape {
+           var sideLength: Double
+
+           init(sideLength: Double, name: String) {
+               self.sideLength = sideLength
+               super.init(name: name)
+               numberOfSides = 4
+           }
+
+           func area() ->  Double {
+               return sideLength * sideLength
+           }
+
+           override func simpleDescription() -> String {
+               return "A square with sides of length \(sideLength)."
+           }
+       }

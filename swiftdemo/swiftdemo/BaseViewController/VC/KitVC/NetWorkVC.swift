@@ -48,6 +48,8 @@ class NetWorkVC: BaseViewController , UITableViewDataSource, UITableViewDelegate
             weakSelf?.loadNewData()
         })
         self.currentTabelView?.mj_header?.beginRefreshing()
+        
+        
     }
     //MARK:请求新的数据
     func loadNewData(){
