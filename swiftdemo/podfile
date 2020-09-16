@@ -10,5 +10,7 @@ target 'swiftdemo' do
    pod 'JXSegmentedView'
    pod 'Kingfisher'
    pod 'SwiftyJSON'
-   pod  'RxSwift'
+   pod 'RxSwift'
+   pod 'RxCocoa'
+   pod 'lottie-ios'
 end

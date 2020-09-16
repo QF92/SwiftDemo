@@ -174,6 +174,13 @@ fileprivate class TabBar_Item: UIView {
             return title
         }()
         
+    lazy var NumBer:UILabel = {
+        let num = UILabel.init()
+        num.backgroundColor = UIColor.red
+        num.layer.masksToBounds = true
+        num.layer.cornerRadius = 5
+        return num
+    }()
         /// 设置Item显示所需数据
         /// - Parameters:
         ///   - model: 数据
@@ -206,6 +213,7 @@ fileprivate class TabBar_Item: UIView {
             backgroundColor = UIColor.white
             addSubview(iconView)
             addSubview(titleView)
+            addSubview(NumBer)
         }
         
         override func layoutSubviews() {
@@ -213,6 +221,7 @@ fileprivate class TabBar_Item: UIView {
             iconView.frame = CGRect(x: 0, y: 0, width:id_width, height: 28)
             let y = iconView.id_bottom + 8
             titleView.frame = CGRect(x: 0, y: y, width:id_width, height: 12)
+            NumBer.frame = CGRect.init(x: id_width/2-40, y: 0, width: 10, height: 10)
         }
     }
 

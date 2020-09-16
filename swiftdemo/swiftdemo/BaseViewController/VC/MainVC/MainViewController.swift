@@ -147,8 +147,8 @@ override func viewDidLoad() {
     }()
     
     
-    let dataArr = ["对话框组件 Dialog", "轻提示组件 Toast", "加载框组件 Loading", "空状态组件 EmptyView", "图片选择组件 ImagePicker", "扫描二维码组件 ScanCode", "基础控制器 BaseViewController"]
-    let imageArr = ["icn_icn_dialog", "icn_icn_toast", "icn_icn_loading", "icn_icn_refresh", "icn_icn_emptyview", "icn_icn_update", "icn_icn_image", "icn_icn_scanning", "icn_icn_view"]
+    let dataArr = ["对话框组件 Dialog", "轻提示组件 Toast", "加载框组件 Loading", "空状态组件 EmptyView", "图片选择组件 ImagePicker", "扫描二维码组件 ScanCode", "基础控制器 BaseViewController","Login","RXSwift"]
+    let imageArr = ["icn_icn_dialog", "icn_icn_toast", "icn_icn_loading", "icn_icn_refresh", "icn_icn_emptyview", "icn_icn_update", "icn_icn_image", "icn_icn_scanning", "icn_icn_view", "icn_icn_view" ,  "icn_icn_view" ]
  
     override func rightBtnClick() {
 //        let vc = DInfoViewController.init(nibName: "InfoViewController", bundle: nil)
@@ -210,6 +210,15 @@ extension MainViewController:UITableViewDelegate,UITableViewDataSource{
                 let vc = ShowBaseVC()
                 self.navigationController?.pushViewController(vc, animated: true)
             }
+             if indexPath.section == 7 {
+                 let vc = LoginVC()
+                 self.navigationController?.pushViewController(vc, animated: true)
+             }
+            if indexPath.section == 8 {
+                 let vc = RXSwiftVC()
+                  self.navigationController?.pushViewController(vc, animated: true)
+            }
+        
         }
         func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
             return 5
