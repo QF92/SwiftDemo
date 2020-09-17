@@ -415,7 +415,7 @@ class ImagePicker: NSObject,UIImagePickerControllerDelegate,UINavigationControll
         
         // 获取当前控制器
         func getCurrentViewcontroller() -> UIViewController?{
-            let rootController = UIApplication.shared.windows.first?.rootViewController
+            let rootController = UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController
             if let tabController = rootController as? UITabBarController   {
                 if let navController = tabController.selectedViewController as? UINavigationController{
                     return navController.children.last

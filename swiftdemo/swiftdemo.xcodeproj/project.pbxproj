@@ -18,7 +18,6 @@
 		084F474A23D45A5C00E12729 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F474923D45A5C00E12729 /* BaseViewController.swift */; };
 		084F474C23D45B5900E12729 /* CustomNavgationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F474B23D45B5900E12729 /* CustomNavgationView.swift */; };
 		0870D26B250F564B0061D8B2 /* RXSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0870D26A250F564B0061D8B2 /* RXSwiftVC.swift */; };
-		0870D26F2511F02B0061D8B2 /* ImageSelectedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0870D26E2511F02B0061D8B2 /* ImageSelectedVC.swift */; };
 		08AAC25B24F7A1E7000B3044 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC25A24F7A1E7000B3044 /* CountdownTimer.swift */; };
 		08AAC25F24F7ABC0000B3044 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC25E24F7ABC0000B3044 /* ColorExtension.swift */; };
 		08AAC27224F7DE35000B3044 /* NetWorkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC27124F7DE35000B3044 /* NetWorkingTool.swift */; };
@@ -336,7 +335,6 @@
 		084F474923D45A5C00E12729 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		084F474B23D45B5900E12729 /* CustomNavgationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavgationView.swift; sourceTree = "<group>"; };
 		0870D26A250F564B0061D8B2 /* RXSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftVC.swift; sourceTree = "<group>"; };
-		0870D26E2511F02B0061D8B2 /* ImageSelectedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectedVC.swift; sourceTree = "<group>"; };
 		08AAC25A24F7A1E7000B3044 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		08AAC25E24F7ABC0000B3044 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		08AAC27124F7DE35000B3044 /* NetWorkingTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkingTool.swift; sourceTree = "<group>"; };
@@ -721,7 +719,6 @@
 		0870D2702511F0480061D8B2 /* ImageVC */ = {
 			isa = PBXGroup;
 			children = (
-				0870D26E2511F02B0061D8B2 /* ImageSelectedVC.swift */,
 			);
 			path = ImageVC;
 			sourceTree = "<group>";
@@ -1801,7 +1798,6 @@
 				08AAC29824FCCDBE000B3044 /* DialogCell.swift in Sources */,
 				08AAC35124FDF37F000B3044 /* HDAlertWindowView.swift in Sources */,
 				08AAC33124FDE199000B3044 /* UIView+IDeal.swift in Sources */,
-				0870D26F2511F02B0061D8B2 /* ImageSelectedVC.swift in Sources */,
 				08AAC50E24FF7D70000B3044 /* URLVC.swift in Sources */,
 				08AAC4AB24FE5D97000B3044 /* ButtonVC.swift in Sources */,
 				08AAC4B624FE70C3000B3044 /* PopVC.swift in Sources */,
