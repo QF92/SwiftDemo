@@ -17,6 +17,7 @@
 		084F474823D4502800E12729 /* BaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F474723D4502800E12729 /* BaseNavViewController.swift */; };
 		084F474A23D45A5C00E12729 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F474923D45A5C00E12729 /* BaseViewController.swift */; };
 		084F474C23D45B5900E12729 /* CustomNavgationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F474B23D45B5900E12729 /* CustomNavgationView.swift */; };
+		085136662514548000020E26 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085136652514548000020E26 /* CoreLocation.framework */; };
 		0870D26B250F564B0061D8B2 /* RXSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0870D26A250F564B0061D8B2 /* RXSwiftVC.swift */; };
 		08AAC25B24F7A1E7000B3044 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC25A24F7A1E7000B3044 /* CountdownTimer.swift */; };
 		08AAC25F24F7ABC0000B3044 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC25E24F7ABC0000B3044 /* ColorExtension.swift */; };
@@ -334,6 +335,7 @@
 		084F474723D4502800E12729 /* BaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavViewController.swift; sourceTree = "<group>"; };
 		084F474923D45A5C00E12729 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		084F474B23D45B5900E12729 /* CustomNavgationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavgationView.swift; sourceTree = "<group>"; };
+		085136652514548000020E26 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0870D26A250F564B0061D8B2 /* RXSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftVC.swift; sourceTree = "<group>"; };
 		08AAC25A24F7A1E7000B3044 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		08AAC25E24F7ABC0000B3044 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -661,6 +663,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085136662514548000020E26 /* CoreLocation.framework in Frameworks */,
 				117E7EA4B98D4E2638EA3CAE /* Pods_swiftdemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1428,6 +1431,7 @@
 		A2E981E79A485E7D54A9F898 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				085136652514548000020E26 /* CoreLocation.framework */,
 				3D5DDB2137813DE70D05200E /* Pods_swiftdemo.framework */,
 			);
 			name = Frameworks;
