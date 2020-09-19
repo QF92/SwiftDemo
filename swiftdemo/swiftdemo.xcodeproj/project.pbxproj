@@ -18,6 +18,11 @@
 		084F474A23D45A5C00E12729 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F474923D45A5C00E12729 /* BaseViewController.swift */; };
 		084F474C23D45B5900E12729 /* CustomNavgationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F474B23D45B5900E12729 /* CustomNavgationView.swift */; };
 		085136662514548000020E26 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085136652514548000020E26 /* CoreLocation.framework */; };
+		0869920E25159E630034FC7B /* ButSelectedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869920C25159E620034FC7B /* ButSelectedVC.swift */; };
+		0869920F25159E630034FC7B /* AnimationTextFieldAndStarButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869920D25159E620034FC7B /* AnimationTextFieldAndStarButtonVC.swift */; };
+		0869921425159E7C0034FC7B /* AnimationTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869921125159E7C0034FC7B /* AnimationTextFieldView.swift */; };
+		0869921525159E7C0034FC7B /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869921225159E7C0034FC7B /* StarButton.swift */; };
+		0869921625159E7C0034FC7B /* ButSelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869921325159E7C0034FC7B /* ButSelectedView.swift */; };
 		0870D26B250F564B0061D8B2 /* RXSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0870D26A250F564B0061D8B2 /* RXSwiftVC.swift */; };
 		08AAC25B24F7A1E7000B3044 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC25A24F7A1E7000B3044 /* CountdownTimer.swift */; };
 		08AAC25F24F7ABC0000B3044 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC25E24F7ABC0000B3044 /* ColorExtension.swift */; };
@@ -336,6 +341,11 @@
 		084F474923D45A5C00E12729 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		084F474B23D45B5900E12729 /* CustomNavgationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavgationView.swift; sourceTree = "<group>"; };
 		085136652514548000020E26 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0869920C25159E620034FC7B /* ButSelectedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButSelectedVC.swift; sourceTree = "<group>"; };
+		0869920D25159E620034FC7B /* AnimationTextFieldAndStarButtonVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTextFieldAndStarButtonVC.swift; sourceTree = "<group>"; };
+		0869921125159E7C0034FC7B /* AnimationTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTextFieldView.swift; sourceTree = "<group>"; };
+		0869921225159E7C0034FC7B /* StarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
+		0869921325159E7C0034FC7B /* ButSelectedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButSelectedView.swift; sourceTree = "<group>"; };
 		0870D26A250F564B0061D8B2 /* RXSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftVC.swift; sourceTree = "<group>"; };
 		08AAC25A24F7A1E7000B3044 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		08AAC25E24F7ABC0000B3044 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -719,6 +729,26 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		0869920B25159E620034FC7B /* 界面效果 */ = {
+			isa = PBXGroup;
+			children = (
+				0869921025159E7C0034FC7B /* 界面效果View */,
+				0869920C25159E620034FC7B /* ButSelectedVC.swift */,
+				0869920D25159E620034FC7B /* AnimationTextFieldAndStarButtonVC.swift */,
+			);
+			path = "界面效果";
+			sourceTree = "<group>";
+		};
+		0869921025159E7C0034FC7B /* 界面效果View */ = {
+			isa = PBXGroup;
+			children = (
+				0869921125159E7C0034FC7B /* AnimationTextFieldView.swift */,
+				0869921225159E7C0034FC7B /* StarButton.swift */,
+				0869921325159E7C0034FC7B /* ButSelectedView.swift */,
+			);
+			path = "界面效果View";
+			sourceTree = "<group>";
+		};
 		0870D2702511F0480061D8B2 /* ImageVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -757,6 +787,7 @@
 				080C973424163773008073D4 /* MainViewController.swift */,
 				084BBF4C2508B1060003F8D4 /* LoginVC.swift */,
 				0870D26A250F564B0061D8B2 /* RXSwiftVC.swift */,
+				0869920B25159E620034FC7B /* 界面效果 */,
 				08AAC45B24FE3EEF000B3044 /* ShowBaseVC */,
 				08AAC45624FE3DA2000B3044 /* ScanQRcode */,
 				08AAC33B24FDE3D0000B3044 /* ImagePickerVC */,
@@ -1702,6 +1733,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08AAC51A2500E64B000B3044 /* FontExtension.swift in Sources */,
+				0869920F25159E630034FC7B /* AnimationTextFieldAndStarButtonVC.swift in Sources */,
 				08AAC45A24FE3EE9000B3044 /* ShowBaseVC.swift in Sources */,
 				08AAC4AE24FE6405000B3044 /* BaseLabel.swift in Sources */,
 				08AAC4A224FE496A000B3044 /* LimitsTools.swift in Sources */,
@@ -1785,6 +1817,7 @@
 				08AAC4FA24FF79C3000B3044 /* PlistUtils.swift in Sources */,
 				08AAC50824FF7C9E000B3044 /* TimeDateVC.swift in Sources */,
 				08AAC45824FE3EAD000B3044 /* ScanQRCodeVC.swift in Sources */,
+				0869921525159E7C0034FC7B /* StarButton.swift in Sources */,
 				08AAC4E224FF42BE000B3044 /* BaseSegmentedControl.swift in Sources */,
 				08AAC39924FDF83B000B3044 /* CLImagePickerListCell.swift in Sources */,
 				08AAC2A224FCCF2B000B3044 /* DialogTool.swift in Sources */,
@@ -1800,6 +1833,7 @@
 				08AAC52B2500F83A000B3044 /* QFNetworkingOC.swift in Sources */,
 				08AAC30D24FCFBA6000B3044 /* LoadingListVC.swift in Sources */,
 				08AAC29824FCCDBE000B3044 /* DialogCell.swift in Sources */,
+				0869921425159E7C0034FC7B /* AnimationTextFieldView.swift in Sources */,
 				08AAC35124FDF37F000B3044 /* HDAlertWindowView.swift in Sources */,
 				08AAC33124FDE199000B3044 /* UIView+IDeal.swift in Sources */,
 				08AAC50E24FF7D70000B3044 /* URLVC.swift in Sources */,
@@ -1811,6 +1845,7 @@
 				08AAC45E24FE44ED000B3044 /* ScanNavgationView.swift in Sources */,
 				08AAC50224FF7B72000B3044 /* UrlExtension.swift in Sources */,
 				08AAC39524FDF83B000B3044 /* CLSingleTypeCell.swift in Sources */,
+				0869920E25159E630034FC7B /* ButSelectedVC.swift in Sources */,
 				08AAC32724FD02CF000B3044 /* GifView.swift in Sources */,
 				08AAC38924FDF83B000B3044 /* CLImageAmplifyView.swift in Sources */,
 				08AAC4D624FF415F000B3044 /* ProgressVC.swift in Sources */,
@@ -1826,6 +1861,7 @@
 				08AAC38C24FDF83B000B3044 /* CLCircleView.swift in Sources */,
 				08AAC3B124FE1D69000B3044 /* UIImageExtension.swift in Sources */,
 				08AAC34224FDE95A000B3044 /* ImagePicker.swift in Sources */,
+				0869921625159E7C0034FC7B /* ButSelectedView.swift in Sources */,
 				08AAC39224FDF83B000B3044 /* ImagePickerChooseImageCell.swift in Sources */,
 				08AAC2BC24FCDF01000B3044 /* DialogCustomView.swift in Sources */,
 				08AAC49024FE4560000B3044 /* BundleTools.m in Sources */,
