@@ -684,7 +684,6 @@
 		080C973324163731008073D4 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				0870D2702511F0480061D8B2 /* ImageVC */,
 				08AAC4A424FE5622000B3044 /* UnitVC */,
 				08AAC4A324FE55FE000B3044 /* KitVC */,
 				08AAC29124FCA87C000B3044 /* MainVC */,
@@ -747,13 +746,6 @@
 				0869921325159E7C0034FC7B /* ButSelectedView.swift */,
 			);
 			path = "界面效果View";
-			sourceTree = "<group>";
-		};
-		0870D2702511F0480061D8B2 /* ImageVC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ImageVC;
 			sourceTree = "<group>";
 		};
 		08AAC25724F7A0B7000B3044 /* 倒计时 */ = {
@@ -885,10 +877,10 @@
 				08AAC2D724FCE6E8000B3044 /* ic_new@3x.png */,
 				08AAC2D224FCE6D7000B3044 /* ic_back_grey@2x.png */,
 				08AAC2D324FCE6D7000B3044 /* ic_back_grey@3x.png */,
-				08AAC2C024FCE67D000B3044 /* ic_toast_success2@3x.png */,
-				08AAC2C224FCE67E000B3044 /* icn_icn_fail2@3x.png */,
-				08AAC2C324FCE67E000B3044 /* icn_icn_fail2@2x.png */,
 				08AAC2C424FCE67E000B3044 /* ic_toast_success2@2x.png */,
+				08AAC2C024FCE67D000B3044 /* ic_toast_success2@3x.png */,
+				08AAC2C324FCE67E000B3044 /* icn_icn_fail2@2x.png */,
+				08AAC2C224FCE67E000B3044 /* icn_icn_fail2@3x.png */,
 				08AAC2C724FCE67E000B3044 /* icon_sign2@2x.png */,
 				08AAC2C824FCE67E000B3044 /* icon_sign2@3x.png */,
 			);

@@ -60,10 +60,64 @@ class UIKitViewController: BaseViewController {
 //             let vc = InfoViewController.init(nibName: "InfoViewController", bundle: nil)
 //             self.navigationController?.pushViewController(vc, animated: true)
          }
+    
+    
+     
+   // #pragma mark -  Swift 中 set 和 get 方法
+    
+  //  在Swift中有计算属性set{}和get{}和存储属性didSet{}和willSet{},
+  //  与OC不同的是，在Swift中get与set方法并不常用，也不会重写getter也setter方法，非要重写的话，可以这样：
+
+    
+    // 1. 只重写get方法，不写set方法，默认为readOnly
+          public var  number: Int{
+             get{
+                return 1;
+            }
+          }
+     //2.swift 中我们不能使用_C来表示OC中@property 修饰的变量值
+         var numbers : Int{
+            get{
+                //1、不能写成number 或者self.number都会造成crash，原因不用多说大家都懂的，死循环
+                //2、不能像Obj那样写成return _number
+                //3、不能写成return numbers 或者 return self.numbers
+                return 1 ;
+            }
+            set{
+                //写上 self.number = newValue 和 不写都会造成crash
+                            //而且 不能像ObjC中写上 ObjC
+                            //number = newValue造成crash  原因是方法的死循环
+                let a = newValue;
+                print(a);
+            }
+        }
+    //3、由于2提到的原因重写的时候，我们使用额外的一个变量来重写
+    var _numberd :Int = 0
+       var numberd : Int{
+           get{
+               return _numberd;
+           }set{
+               _numberd = newValue;
+           }
+       }
+    
+    //4、Swift中使用了willset 和 didSet这2个特性，来见识属性的除初始化之外的属性值变化
+        var numberset : Int = 0{
+            didSet{
+                //UI 操作
+            }
+            willSet{
+                
+            }
+        }
+      //5、懒加载写法
+        lazy var titleLab : UILabel = {
+              return UILabel.init();
+         }()
      }
 
      //MARK: - UITableViewDelegate,UITableViewDataSource
-     extension UIKitViewController:UITableViewDelegate,UITableViewDataSource{
+extension UIKitViewController:UITableViewDelegate,UITableViewDataSource{
          func numberOfSections(in tableView: UITableView) -> Int {
              return dataArr.count
          }
