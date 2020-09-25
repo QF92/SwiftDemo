@@ -320,6 +320,11 @@
 		08AAC52D2501D236000B3044 /* QFNetWorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC52C2501D236000B3044 /* QFNetWorkVC.swift */; };
 		08AAC5302501D2D0000B3044 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC52F2501D2D0000B3044 /* API.swift */; };
 		08AAC5352501D5AD000B3044 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC5342501D5AD000B3044 /* TestViewController.m */; };
+		08D15B3F251DE30B0014E98A /* CardListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D15B3E251DE30B0014E98A /* CardListVC.swift */; };
+		08D15B43251DE3B70014E98A /* CardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D15B42251DE3B70014E98A /* CardLayout.swift */; };
+		08D15B47251DEA730014E98A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D15B46251DEA730014E98A /* CardView.swift */; };
+		08D15B4A251DEBC50014E98A /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D15B49251DEBC50014E98A /* CardCollectionViewCell.swift */; };
+		08D15B4D251DFF980014E98A /* CardTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D15B4C251DFF980014E98A /* CardTestCell.swift */; };
 		08FFAF55238690FE005D299E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FFAF54238690FE005D299E /* AppDelegate.swift */; };
 		08FFAF57238690FE005D299E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FFAF56238690FE005D299E /* SceneDelegate.swift */; };
 		08FFAF5C238690FE005D299E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FFAF5A238690FE005D299E /* Main.storyboard */; };
@@ -655,6 +660,11 @@
 		08AAC52F2501D2D0000B3044 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		08AAC5332501D5AD000B3044 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		08AAC5342501D5AD000B3044 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		08D15B3E251DE30B0014E98A /* CardListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListVC.swift; sourceTree = "<group>"; };
+		08D15B42251DE3B70014E98A /* CardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLayout.swift; sourceTree = "<group>"; };
+		08D15B46251DEA730014E98A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		08D15B49251DEBC50014E98A /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		08D15B4C251DFF980014E98A /* CardTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTestCell.swift; sourceTree = "<group>"; };
 		08FFAF51238690FE005D299E /* swiftdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FFAF54238690FE005D299E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08FFAF56238690FE005D299E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -1353,6 +1363,8 @@
 				08AAC50F24FF7D97000B3044 /* URLVC.xib */,
 				08AAC51124FF7DD8000B3044 /* ArrayVC.swift */,
 				08AAC51524FF7E06000B3044 /* ArrayVC.xib */,
+				08D15B3E251DE30B0014E98A /* CardListVC.swift */,
+				08D15B41251DE3710014E98A /* CardListView */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -1403,6 +1415,17 @@
 				08AAC5342501D5AD000B3044 /* TestViewController.m */,
 			);
 			path = QFNetWork;
+			sourceTree = "<group>";
+		};
+		08D15B41251DE3710014E98A /* CardListView */ = {
+			isa = PBXGroup;
+			children = (
+				08D15B42251DE3B70014E98A /* CardLayout.swift */,
+				08D15B46251DEA730014E98A /* CardView.swift */,
+				08D15B49251DEBC50014E98A /* CardCollectionViewCell.swift */,
+				08D15B4C251DFF980014E98A /* CardTestCell.swift */,
+			);
+			path = CardListView;
 			sourceTree = "<group>";
 		};
 		08FFAF48238690FE005D299E = {
@@ -1749,6 +1772,7 @@
 				08FFAF5F238690FE005D299E /* swiftdemo.xcdatamodeld in Sources */,
 				080C973524163773008073D4 /* MainViewController.swift in Sources */,
 				08AAC5272500F7E4000B3044 /* QFNetworking.swift in Sources */,
+				08D15B4A251DEBC50014E98A /* CardCollectionViewCell.swift in Sources */,
 				08AAC5292500F812000B3044 /* QFNetworkingError.swift in Sources */,
 				08AAC39F24FDFB73000B3044 /* DrawBoard.swift in Sources */,
 				08AAC38B24FDF83B000B3044 /* CLVideoPlayView.swift in Sources */,
@@ -1770,6 +1794,7 @@
 				08AAC39D24FDF9DA000B3044 /* PreviewModel.swift in Sources */,
 				08AAC49224FE4560000B3044 /* BMScanDefaultCotroller.m in Sources */,
 				08AAC29E24FCCEA2000B3044 /* DialogTestVC.swift in Sources */,
+				08D15B4D251DFF980014E98A /* CardTestCell.swift in Sources */,
 				08AAC2B524FCDBFE000B3044 /* DialogInputView.swift in Sources */,
 				08AAC2F124FCEFB9000B3044 /* ImageToast.swift in Sources */,
 				08AAC31B24FD004D000B3044 /* LoadingFreeUtil.swift in Sources */,
@@ -1798,6 +1823,7 @@
 				08AAC35424FDF40E000B3044 /* MessageStyleView.swift in Sources */,
 				08AAC3A124FDFBCE000B3044 /* BaseBrush.swift in Sources */,
 				084F473F23D4305F00E12729 /* TabBarViewController.swift in Sources */,
+				08D15B3F251DE30B0014E98A /* CardListVC.swift in Sources */,
 				08AAC51224FF7DD8000B3044 /* ArrayVC.swift in Sources */,
 				08AAC2EB24FCEEC2000B3044 /* TextToast.swift in Sources */,
 				08AAC2E824FCEBEF000B3044 /* ToastTestVC.swift in Sources */,
@@ -1819,6 +1845,7 @@
 				08AAC2BA24FCDD76000B3044 /* StringExtension.swift in Sources */,
 				08AAC32524FD02BF000B3044 /* NavProgressView.swift in Sources */,
 				08AAC29C24FCCE8D000B3044 /* DialogBaseVC.swift in Sources */,
+				08D15B43251DE3B70014E98A /* CardLayout.swift in Sources */,
 				08AAC48F24FE4560000B3044 /* BMScanController.m in Sources */,
 				08AAC37224FDF7F9000B3044 /* IDEditorViewController.swift in Sources */,
 				08AAC4B224FE6BE4000B3044 /* LabelVC.swift in Sources */,
@@ -1856,6 +1883,7 @@
 				0869921625159E7C0034FC7B /* ButSelectedView.swift in Sources */,
 				08AAC39224FDF83B000B3044 /* ImagePickerChooseImageCell.swift in Sources */,
 				08AAC2BC24FCDF01000B3044 /* DialogCustomView.swift in Sources */,
+				08D15B47251DEA730014E98A /* CardView.swift in Sources */,
 				08AAC49024FE4560000B3044 /* BundleTools.m in Sources */,
 				08AAC34F24FDF2FE000B3044 /* HDAlertVC.swift in Sources */,
 				08AAC4A724FE56F8000B3044 /* NetWorkVC.swift in Sources */,
