@@ -13,4 +13,5 @@ target 'swiftdemo' do
    pod 'RxSwift'
    pod 'RxCocoa'
    pod 'lottie-ios'
+   pod 'AnyImageKit'
 end

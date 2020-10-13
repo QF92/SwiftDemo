@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AnyImageKit
 
 class AnimationTextFieldAndStarButtonVC: BaseViewController {
     var id = AnimationTextFieldView ()
@@ -39,6 +40,15 @@ class AnimationTextFieldAndStarButtonVC: BaseViewController {
         wujiaoxingbtn.backgroundColor = UIColor.blue
         wujiaoxingbtn.addTarget(self, action: #selector(btnSelector(sender:)), for: .touchUpInside)
         self.view.addSubview(wujiaoxingbtn)
+        
+        let btn = UIButton.init(type: UIButton.ButtonType.system)
+        btn.frame = CGRect(x: 200, y: 580, width: 150, height: 50)
+        btn.backgroundColor = UIColor.blue
+        btn.setTitle("AnyImageKit 图片选择", for: UIControl.State.normal)
+        btn.setTitleColor(UIColor.white, for:.normal)
+        
+        btn.addTarget(self, action: #selector(clickbtn(sender:)), for: .touchUpInside)
+        self.view.addSubview(btn)
         // Do any additional setup after loading the view, typically from a nib.
     }
     @objc func btnSelector(sender: StarButton){
@@ -47,7 +57,15 @@ class AnimationTextFieldAndStarButtonVC: BaseViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-
+    
+    @objc func clickbtn(sender: UIButton){
+        print("我点到了aaaa")
+        let options = PickerOptionsInfo()
+        let controller = ImagePickerController(options: options, delegate: self)
+        controller.
+        controller.modalPresentationStyle = .fullScreen
+        present(controller, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
@@ -58,4 +76,20 @@ class AnimationTextFieldAndStarButtonVC: BaseViewController {
     }
     */
 
+}
+
+extension AnimationTextFieldAndStarButtonVC:ImagePickerControllerDelegate {
+    
+    /// 取消选择（该方法有默认实现，可以省略）
+    func imagePickerDidCancel(_ picker: ImagePickerController) {
+        // 你的业务代码，处理取消(存在默认实现，如果需要额外行为请自行实现本方法)
+        picker.dismiss(animated: true, completion: nil)
+    }
+
+    /// 完成选择
+    /// - Parameters:  - picker: 图片选择器    - result: 返回结果对象，内部包含所选中的图片资源
+    func imagePicker(_ picker: ImagePickerController, didFinishPicking assets: [Asset], useOriginalImage: Bool) {
+        
+    }
+   
 }

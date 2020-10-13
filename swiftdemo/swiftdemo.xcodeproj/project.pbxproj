@@ -24,6 +24,9 @@
 		0869921525159E7C0034FC7B /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869921225159E7C0034FC7B /* StarButton.swift */; };
 		0869921625159E7C0034FC7B /* ButSelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869921325159E7C0034FC7B /* ButSelectedView.swift */; };
 		0870D26B250F564B0061D8B2 /* RXSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0870D26A250F564B0061D8B2 /* RXSwiftVC.swift */; };
+		0876BC1325204361008C3A27 /* banner1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0876BC1025204361008C3A27 /* banner1.jpeg */; };
+		0876BC1425204361008C3A27 /* banner2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0876BC1125204361008C3A27 /* banner2.jpeg */; };
+		0876BC1525204361008C3A27 /* banner0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0876BC1225204361008C3A27 /* banner0.jpeg */; };
 		08AAC25B24F7A1E7000B3044 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC25A24F7A1E7000B3044 /* CountdownTimer.swift */; };
 		08AAC25F24F7ABC0000B3044 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC25E24F7ABC0000B3044 /* ColorExtension.swift */; };
 		08AAC27224F7DE35000B3044 /* NetWorkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAC27124F7DE35000B3044 /* NetWorkingTool.swift */; };
@@ -352,6 +355,9 @@
 		0869921225159E7C0034FC7B /* StarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
 		0869921325159E7C0034FC7B /* ButSelectedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButSelectedView.swift; sourceTree = "<group>"; };
 		0870D26A250F564B0061D8B2 /* RXSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftVC.swift; sourceTree = "<group>"; };
+		0876BC1025204361008C3A27 /* banner1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner1.jpeg; sourceTree = "<group>"; };
+		0876BC1125204361008C3A27 /* banner2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner2.jpeg; sourceTree = "<group>"; };
+		0876BC1225204361008C3A27 /* banner0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner0.jpeg; sourceTree = "<group>"; };
 		08AAC25A24F7A1E7000B3044 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		08AAC25E24F7ABC0000B3044 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		08AAC27124F7DE35000B3044 /* NetWorkingTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkingTool.swift; sourceTree = "<group>"; };
@@ -1420,6 +1426,9 @@
 		08D15B41251DE3710014E98A /* CardListView */ = {
 			isa = PBXGroup;
 			children = (
+				0876BC1225204361008C3A27 /* banner0.jpeg */,
+				0876BC1025204361008C3A27 /* banner1.jpeg */,
+				0876BC1125204361008C3A27 /* banner2.jpeg */,
 				08D15B42251DE3B70014E98A /* CardLayout.swift */,
 				08D15B46251DEA730014E98A /* CardView.swift */,
 				08D15B49251DEBC50014E98A /* CardCollectionViewCell.swift */,
@@ -1544,6 +1553,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0876BC1525204361008C3A27 /* banner0.jpeg in Resources */,
 				08AAC41E24FE1FCF000B3044 /* clr_blue@2x.png in Resources */,
 				08AAC2E524FCE7FB000B3044 /* btn_back@2x.png in Resources */,
 				08AAC48724FE4560000B3044 /* icn_light@2x.png in Resources */,
@@ -1631,6 +1641,7 @@
 				08AAC40524FE1FCF000B3044 /* ic_msk_grey@2x.png in Resources */,
 				08AAC4D424FF409B000B3044 /* SwitchVC.xib in Resources */,
 				08AAC2FF24FCF3B0000B3044 /* icn_icn_fail@3x.png in Resources */,
+				0876BC1325204361008C3A27 /* banner1.jpeg in Resources */,
 				08AAC43324FE1FCF000B3044 /* photo_sel_photoPicker.png in Resources */,
 				08AAC44224FE1FCF000B3044 /* clr_red@3x.png in Resources */,
 				08AAC48024FE4560000B3044 /* bm_scan_image_qr_newbarcode_light_on@2x.png in Resources */,
@@ -1691,6 +1702,7 @@
 				08AAC41F24FE1FCF000B3044 /* btn_back2@2x.png in Resources */,
 				08AAC31324FCFFC7000B3044 /* icn_icn_loading@2x.png in Resources */,
 				08AAC42824FE1FCF000B3044 /* icn_icn_finish@3x.png in Resources */,
+				0876BC1425204361008C3A27 /* banner2.jpeg in Resources */,
 				08AAC33A24FDE31C000B3044 /* ic_empty@2x.png in Resources */,
 				08AAC43524FE1FCF000B3044 /* icn_icn_back_white.png in Resources */,
 				08AAC42024FE1FCF000B3044 /* ic_msk@2x.png in Resources */,
