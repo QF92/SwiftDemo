@@ -62,7 +62,6 @@ class AnimationTextFieldAndStarButtonVC: BaseViewController {
         print("我点到了aaaa")
         let options = PickerOptionsInfo()
         let controller = ImagePickerController(options: options, delegate: self)
-        controller.
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
     }

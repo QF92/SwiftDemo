@@ -10,6 +10,7 @@
 		080C973524163773008073D4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080C973424163773008073D4 /* MainViewController.swift */; };
 		080C97372416378C008073D4 /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080C97362416378C008073D4 /* UIKitViewController.swift */; };
 		080C973924163797008073D4 /* UnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080C973824163797008073D4 /* UnitViewController.swift */; };
+		08486CBB2541215F009AE3FB /* Pch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08486CBA2541215F009AE3FB /* Pch.swift */; };
 		084BBF4D2508B1060003F8D4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084BBF4C2508B1060003F8D4 /* LoginVC.swift */; };
 		084F473F23D4305F00E12729 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F473E23D4305F00E12729 /* TabBarViewController.swift */; };
 		084F474123D4339A00E12729 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F474023D4339A00E12729 /* AppConfig.swift */; };
@@ -341,6 +342,7 @@
 		080C973424163773008073D4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		080C97362416378C008073D4 /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
 		080C973824163797008073D4 /* UnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitViewController.swift; sourceTree = "<group>"; };
+		08486CBA2541215F009AE3FB /* Pch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pch.swift; sourceTree = "<group>"; };
 		084BBF4C2508B1060003F8D4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		084F473E23D4305F00E12729 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		084F474023D4339A00E12729 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
@@ -1460,6 +1462,7 @@
 			children = (
 				084F474223D4356200E12729 /* Utils */,
 				084F474023D4339A00E12729 /* AppConfig.swift */,
+				08486CBA2541215F009AE3FB /* Pch.swift */,
 				08AAC5212500F6E4000B3044 /* QFNetWork */,
 				08AAC27124F7DE35000B3044 /* NetWorkingTool.swift */,
 				084F473C23D42F7500E12729 /* BaseViewController */,
@@ -1860,6 +1863,7 @@
 				08D15B43251DE3B70014E98A /* CardLayout.swift in Sources */,
 				08AAC48F24FE4560000B3044 /* BMScanController.m in Sources */,
 				08AAC37224FDF7F9000B3044 /* IDEditorViewController.swift in Sources */,
+				08486CBB2541215F009AE3FB /* Pch.swift in Sources */,
 				08AAC4B224FE6BE4000B3044 /* LabelVC.swift in Sources */,
 				08AAC52B2500F83A000B3044 /* QFNetworkingOC.swift in Sources */,
 				08AAC30D24FCFBA6000B3044 /* LoadingListVC.swift in Sources */,

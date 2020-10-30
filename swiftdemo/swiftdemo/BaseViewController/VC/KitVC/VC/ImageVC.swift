@@ -32,15 +32,13 @@ class ImageVC: BaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    lazy var imgView: UIImageView = {
-        let img = UIImageView.init(frame: CGRect.init(x: 10, y:  KNavgationBarHeight + 40 + 40, width: 90, height: 90))
-        return img
-    }()
-    lazy var label: UILabel = {
-        let label = UILabel.init(frame: CGRect.init(x: 10, y: KNavgationBarHeight + 40, width: KScreenWidth, height: 30))
-        label.text = "通过颜色生成一张图片"
-        return label
-    }()
+    lazy var imgView =  UIImageView().then {
+        $0.frame = CGRect.init(x: 10, y:  KNavgationBarHeight + 40 + 40, width: 90, height: 90)
+    }
+    lazy var label = UILabel().then{ (lab) in
+        lab.frame = CGRect.init(x: 10, y: KNavgationBarHeight + 40, width: KScreenWidth, height: 30)
+        lab.text = "通过颜色生成一张图片"
+    }
     lazy var label2: UILabel = {
         let label = UILabel.init(frame: CGRect.init(x: 10, y: KNavgationBarHeight + 160, width: KScreenWidth-20, height: 80))
         label.text = "self.imgView.image = UIImage.id_renderImageWithColor(UIColor.purple, size: CGSize.init(width: 80, height: 80))"

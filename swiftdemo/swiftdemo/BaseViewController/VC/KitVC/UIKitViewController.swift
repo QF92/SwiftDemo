@@ -29,6 +29,11 @@ class UIKitViewController: BaseViewController {
         imagevie.kf.setImage(with: url, placeholder: placeholderImage, options: nil, progressBlock: nil) { (result) in
            
         }
+        
+        imagevie.kf.setImage(with: url, placeholder: view.image, options: [], completionHandler: { _ in
+           
+        })
+        
 //        imagevie.kf.setImage(with: <#T##ImageDataProvider?#>, placeholder: <#T##Placeholder?#>, options: <#T##KingfisherOptionsInfo?#>, progressBlock: <#T##DownloadProgressBlock?##DownloadProgressBlock?##(Int64, Int64) -> Void#>, completionHandler: <#T##((Result<RetrieveImageResult, KingfisherError>) -> Void)?##((Result<RetrieveImageResult, KingfisherError>) -> Void)?##(Result<RetrieveImageResult, KingfisherError>) -> Void#>)
 //
 //

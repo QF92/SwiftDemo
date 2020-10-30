@@ -74,13 +74,12 @@ class ButtonVC: BaseViewController {
         scroll.backgroundColor = UIColor.systemGroupedBackground //systemGroupedBackground
         return scroll
     }()
-    lazy var titleLabel1: UILabel = {
-        let label = UILabel.init(frame: CGRect.init(x: 15, y: 0, width: KScreenWidth-30, height: 30))
-        label.textColor = UIColor.init(redValue: 155, green: 155, blue: 155, alpha: 1)
-        label.font = UIFont.systemFont(ofSize: 12)
-        label.text = "主按钮"
-        return label
-    }()
+    lazy var titleLabel1 = UILabel().then{
+        $0.frame = CGRect.init(x: 15, y: 0, width: KScreenWidth-30, height: 30)
+        $0.textColor = UIColor.init(redValue: 155, green: 155, blue: 155, alpha: 1)
+        $0.font = UIFont.systemFont(ofSize: 12)
+        $0.text = "主按钮"
+    }
     lazy var titleLabel2: UILabel = {
         let label = UILabel.init(frame: CGRect.init(x: 15, y: bottomView1.frame.maxY, width: KScreenWidth-30, height: 30))
         label.textColor = UIColor.init(redValue: 155, green: 155, blue: 155, alpha: 1)

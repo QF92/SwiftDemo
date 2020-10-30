@@ -10,7 +10,7 @@ import UIKit
 
 class MyactivityTableViewCell: UITableViewCell {
     fileprivate var titleLabel:UILabel?      // 活动标题
-       fileprivate var timeView:UILabel?      // 开始-结束 时间
+       public var timeView:UILabel?      // 开始-结束 时间
        fileprivate var addressView:UILabel?   // 活动地址
        fileprivate var signupNumView:UILabel? // 报名人数
 
