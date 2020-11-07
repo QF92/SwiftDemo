@@ -38,3 +38,6 @@
 
 #import "BMScanController.h"
 #import "BMScanDefaultCotroller.h"
+#import "ConvertMp3.h"
+#import "AmrCodec.h"
+#import "VoiceConverter.h"

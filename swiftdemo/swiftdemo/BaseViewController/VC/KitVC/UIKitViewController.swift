@@ -30,7 +30,7 @@ class UIKitViewController: BaseViewController {
            
         }
         
-        imagevie.kf.setImage(with: url, placeholder: view.image, options: [], completionHandler: { _ in
+        imagevie.kf.setImage(with: url, placeholder: placeholderImage, options: [], completionHandler: { _ in
            
         })
         

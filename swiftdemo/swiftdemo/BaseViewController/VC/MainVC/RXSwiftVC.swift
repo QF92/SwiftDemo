@@ -81,6 +81,41 @@ class RXSwiftVC: BaseViewController {
         }
         
         // Do any additional setup after loading the view.
+        
+//        RxCocoa + UIGestureRecognizer
+        
+        var disposeBag = DisposeBag()
+        
+        let tapGesture = UITapGestureRecognizer()
+        view.addGestureRecognizer(tapGesture)
+        // 订阅方式实现
+        tapGesture.rx.event.subscribe(onNext: { _ in
+            print("tapped")
+        }).disposed(by: disposeBag)
+
+        // 绑定方式实现
+        tapGesture.rx.event.bind { _ in
+            print("tapped")
+        }.disposed(by: disposeBag)
+        
+        // 添加一个上滑的手势
+        let swipe = UISwipeGestureRecognizer()
+        swipe.direction = .up
+        self.view.addGestureRecognizer(swipe)
+
+        // 订阅方式实现
+        swipe.rx.event.subscribe(onNext: { [weak self] recognizer in
+            let point = recognizer.location(in: self?.view)
+            print("向上滑动 \(point.x) - \(point.y)")
+        }).disposed(by: disposeBag)
+
+        // 绑定方式实现
+        swipe.direction = .down
+        swipe.rx.event.bind { [weak self] recognizer in
+            let point = recognizer.location(in: self?.view)
+            print("向下滑动 \(point.x) - \(point.y)")
+        }.disposed(by: disposeBag)
+        
     }
 
     

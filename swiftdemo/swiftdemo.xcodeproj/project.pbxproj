@@ -10,6 +10,15 @@
 		080C973524163773008073D4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080C973424163773008073D4 /* MainViewController.swift */; };
 		080C97372416378C008073D4 /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080C97362416378C008073D4 /* UIKitViewController.swift */; };
 		080C973924163797008073D4 /* UnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080C973824163797008073D4 /* UnitViewController.swift */; };
+		082958402556736C007B3F5D /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0829582B2556736C007B3F5D /* amrFileCodec.mm */; };
+		082958422556736C007B3F5D /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 082958322556736C007B3F5D /* VoiceConverter.mm */; };
+		0829584C255673EA007B3F5D /* ConvertMp3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0829584B255673EA007B3F5D /* ConvertMp3.m */; };
+		0829585025567467007B3F5D /* RecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0829584E25567466007B3F5D /* RecordManager.swift */; };
+		0829585125567467007B3F5D /* ConvertAmr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0829584F25567467007B3F5D /* ConvertAmr.swift */; };
+		08295873255677B1007B3F5D /* libvo-amrwbenc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08295867255677B0007B3F5D /* libvo-amrwbenc.a */; };
+		08295874255677B1007B3F5D /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08295868255677B1007B3F5D /* libmp3lame.a */; };
+		08295875255677B1007B3F5D /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0829586E255677B1007B3F5D /* libopencore-amrwb.a */; };
+		08295876255677B1007B3F5D /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0829586F255677B1007B3F5D /* libopencore-amrnb.a */; };
 		08486CBB2541215F009AE3FB /* Pch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08486CBA2541215F009AE3FB /* Pch.swift */; };
 		084BBF4D2508B1060003F8D4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084BBF4C2508B1060003F8D4 /* LoginVC.swift */; };
 		084F473F23D4305F00E12729 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F473E23D4305F00E12729 /* TabBarViewController.swift */; };
@@ -342,6 +351,25 @@
 		080C973424163773008073D4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		080C97362416378C008073D4 /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
 		080C973824163797008073D4 /* UnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitViewController.swift; sourceTree = "<group>"; };
+		0829582B2556736C007B3F5D /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		082958312556736C007B3F5D /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		082958322556736C007B3F5D /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
+		0829583E2556736C007B3F5D /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		0829583F2556736C007B3F5D /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		0829584A255673EA007B3F5D /* ConvertMp3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertMp3.h; sourceTree = "<group>"; };
+		0829584B255673EA007B3F5D /* ConvertMp3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertMp3.m; sourceTree = "<group>"; };
+		0829584E25567466007B3F5D /* RecordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordManager.swift; sourceTree = "<group>"; };
+		0829584F25567467007B3F5D /* ConvertAmr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertAmr.swift; sourceTree = "<group>"; };
+		08295862255677B0007B3F5D /* AmrCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmrCodec.h; sourceTree = "<group>"; };
+		08295865255677B0007B3F5D /* enc_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enc_if.h; sourceTree = "<group>"; };
+		08295867255677B0007B3F5D /* libvo-amrwbenc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libvo-amrwbenc.a"; sourceTree = "<group>"; };
+		08295868255677B1007B3F5D /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		0829586B255677B1007B3F5D /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		0829586C255677B1007B3F5D /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		0829586E255677B1007B3F5D /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		0829586F255677B1007B3F5D /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		08295871255677B1007B3F5D /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		08295872255677B1007B3F5D /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
 		08486CBA2541215F009AE3FB /* Pch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pch.swift; sourceTree = "<group>"; };
 		084BBF4C2508B1060003F8D4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		084F473E23D4305F00E12729 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -692,6 +720,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				085136662514548000020E26 /* CoreLocation.framework in Frameworks */,
+				08295876255677B1007B3F5D /* libopencore-amrnb.a in Frameworks */,
+				08295875255677B1007B3F5D /* libopencore-amrwb.a in Frameworks */,
+				08295874255677B1007B3F5D /* libmp3lame.a in Frameworks */,
+				08295873255677B1007B3F5D /* libvo-amrwbenc.a in Frameworks */,
 				117E7EA4B98D4E2638EA3CAE /* Pods_swiftdemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,6 +741,112 @@
 				08AAC27424F8FD14000B3044 /* View */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		082958282556734C007B3F5D /* AudioTool */ = {
+			isa = PBXGroup;
+			children = (
+				0829584F25567467007B3F5D /* ConvertAmr.swift */,
+				0829584E25567466007B3F5D /* RecordManager.swift */,
+				08295849255673D0007B3F5D /* Amr-Wav2 */,
+				0829584825567392007B3F5D /* Amr-Wav1 */,
+				082958292556736C007B3F5D /* third-party */,
+			);
+			path = AudioTool;
+			sourceTree = "<group>";
+		};
+		082958292556736C007B3F5D /* third-party */ = {
+			isa = PBXGroup;
+			children = (
+				08295862255677B0007B3F5D /* AmrCodec.h */,
+				08295868255677B1007B3F5D /* libmp3lame.a */,
+				08295869255677B1007B3F5D /* opencore-amr */,
+				08295863255677B0007B3F5D /* vo-amrwbenc */,
+				0829583F2556736C007B3F5D /* lame.h */,
+			);
+			path = "third-party";
+			sourceTree = "<group>";
+		};
+		0829584825567392007B3F5D /* Amr-Wav1 */ = {
+			isa = PBXGroup;
+			children = (
+				0829583E2556736C007B3F5D /* VoiceConverter.h */,
+				082958322556736C007B3F5D /* VoiceConverter.mm */,
+				082958312556736C007B3F5D /* amrFileCodec.h */,
+				0829582B2556736C007B3F5D /* amrFileCodec.mm */,
+			);
+			path = "Amr-Wav1";
+			sourceTree = "<group>";
+		};
+		08295849255673D0007B3F5D /* Amr-Wav2 */ = {
+			isa = PBXGroup;
+			children = (
+				0829584A255673EA007B3F5D /* ConvertMp3.h */,
+				0829584B255673EA007B3F5D /* ConvertMp3.m */,
+			);
+			path = "Amr-Wav2";
+			sourceTree = "<group>";
+		};
+		08295863255677B0007B3F5D /* vo-amrwbenc */ = {
+			isa = PBXGroup;
+			children = (
+				08295864255677B0007B3F5D /* vo-amrwbenc */,
+				08295866255677B0007B3F5D /* lib */,
+			);
+			path = "vo-amrwbenc";
+			sourceTree = "<group>";
+		};
+		08295864255677B0007B3F5D /* vo-amrwbenc */ = {
+			isa = PBXGroup;
+			children = (
+				08295865255677B0007B3F5D /* enc_if.h */,
+			);
+			path = "vo-amrwbenc";
+			sourceTree = "<group>";
+		};
+		08295866255677B0007B3F5D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				08295867255677B0007B3F5D /* libvo-amrwbenc.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		08295869255677B1007B3F5D /* opencore-amr */ = {
+			isa = PBXGroup;
+			children = (
+				0829586A255677B1007B3F5D /* opencore-amrwb */,
+				0829586D255677B1007B3F5D /* lib */,
+				08295870255677B1007B3F5D /* opencore-amrnb */,
+			);
+			path = "opencore-amr";
+			sourceTree = "<group>";
+		};
+		0829586A255677B1007B3F5D /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				0829586B255677B1007B3F5D /* if_rom.h */,
+				0829586C255677B1007B3F5D /* dec_if.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		0829586D255677B1007B3F5D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0829586E255677B1007B3F5D /* libopencore-amrwb.a */,
+				0829586F255677B1007B3F5D /* libopencore-amrnb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		08295870255677B1007B3F5D /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				08295871255677B1007B3F5D /* interf_dec.h */,
+				08295872255677B1007B3F5D /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
 			sourceTree = "<group>";
 		};
 		084F473C23D42F7500E12729 /* BaseViewController */ = {
@@ -1460,6 +1598,7 @@
 		08FFAF53238690FE005D299E /* swiftdemo */ = {
 			isa = PBXGroup;
 			children = (
+				082958282556734C007B3F5D /* AudioTool */,
 				084F474223D4356200E12729 /* Utils */,
 				084F474023D4339A00E12729 /* AppConfig.swift */,
 				08486CBA2541215F009AE3FB /* Pch.swift */,
@@ -1814,6 +1953,7 @@
 				08AAC2F124FCEFB9000B3044 /* ImageToast.swift in Sources */,
 				08AAC31B24FD004D000B3044 /* LoadingFreeUtil.swift in Sources */,
 				08AAC50424FF7C0C000B3044 /* StringVC.swift in Sources */,
+				0829585125567467007B3F5D /* ConvertAmr.swift in Sources */,
 				08AAC34D24FDF2A5000B3044 /* PopViewUtil.swift in Sources */,
 				08AAC2A024FCCEB9000B3044 /* DialogInputVC.swift in Sources */,
 				08AAC4E024FF4295000B3044 /* BaseSelectView.swift in Sources */,
@@ -1876,6 +2016,7 @@
 				08AAC4B624FE70C3000B3044 /* PopVC.swift in Sources */,
 				08AAC3A724FE06A9000B3044 /* PencilBrush.swift in Sources */,
 				08AAC36E24FDF7F9000B3044 /* CLImagePickerSingleViewController.swift in Sources */,
+				0829585025567467007B3F5D /* RecordManager.swift in Sources */,
 				08AAC4F324FF78AB000B3044 /* AppInfoVC.swift in Sources */,
 				08AAC45E24FE44ED000B3044 /* ScanNavgationView.swift in Sources */,
 				08AAC50224FF7B72000B3044 /* UrlExtension.swift in Sources */,
@@ -1891,6 +2032,7 @@
 				084F474823D4502800E12729 /* BaseNavViewController.swift in Sources */,
 				08AAC28E24FCA3B0000B3044 /* HomeListCell.swift in Sources */,
 				08AAC4C024FE720A000B3044 /* PopView.swift in Sources */,
+				082958402556736C007B3F5D /* amrFileCodec.mm in Sources */,
 				08AAC3AF24FE1BC1000B3044 /* File.swift in Sources */,
 				08AAC49524FE4597000B3044 /* ScanCodeController.swift in Sources */,
 				08AAC38C24FDF83B000B3044 /* CLCircleView.swift in Sources */,
@@ -1913,6 +2055,7 @@
 				08AAC2AD24FCD6AB000B3044 /* BundleUtil.swift in Sources */,
 				08AAC38A24FDF83B000B3044 /* CLImagePickerCamaroCell.swift in Sources */,
 				08AAC5202500ECBD000B3044 /* BaseTabBar.swift in Sources */,
+				0829584C255673EA007B3F5D /* ConvertMp3.m in Sources */,
 				08AAC4E624FF45C0000B3044 /* BaseProgressCircleView.swift in Sources */,
 				08AAC38D24FDF83B000B3044 /* PencilChooseView.swift in Sources */,
 				08AAC4A924FE597B000B3044 /* BaseButton.swift in Sources */,
@@ -1921,6 +2064,7 @@
 				08AAC49124FE4560000B3044 /* UIImage+BMScan.m in Sources */,
 				08AAC2A524FCCFB4000B3044 /* DialogUtil.swift in Sources */,
 				08AAC38E24FDF83B000B3044 /* MiniCell.swift in Sources */,
+				082958422556736C007B3F5D /* VoiceConverter.mm in Sources */,
 				08AAC30B24FCFB83000B3044 /* LoadingWebVC.swift in Sources */,
 				08AAC27624F8FD32000B3044 /* MyactivityTableViewCell.swift in Sources */,
 				08AAC4EF24FF7670000B3044 /* BaseColorVC.swift in Sources */,
@@ -2098,6 +2242,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swiftdemo/third-party/vo-amrwbenc/lib",
+					"$(PROJECT_DIR)/swiftdemo/third-party",
+					"$(PROJECT_DIR)/swiftdemo/third-party/opencore-amr/lib",
+					"$(PROJECT_DIR)/swiftdemo/AudioTool/third-party/opencore-amr/lib",
+					"$(PROJECT_DIR)/swiftdemo/AudioTool/third-party/vo-amrwbenc/lib",
+					"$(PROJECT_DIR)/swiftdemo/AudioTool/third-party",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.qf.com.swiftdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "swiftdemo/BaseViewController/VC/MainVC/ScanQRcode/Scan/IDealist-Bridging-Header.h";
@@ -2116,6 +2269,15 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swiftdemo/third-party/vo-amrwbenc/lib",
+					"$(PROJECT_DIR)/swiftdemo/third-party",
+					"$(PROJECT_DIR)/swiftdemo/third-party/opencore-amr/lib",
+					"$(PROJECT_DIR)/swiftdemo/AudioTool/third-party/opencore-amr/lib",
+					"$(PROJECT_DIR)/swiftdemo/AudioTool/third-party/vo-amrwbenc/lib",
+					"$(PROJECT_DIR)/swiftdemo/AudioTool/third-party",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.qf.com.swiftdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
