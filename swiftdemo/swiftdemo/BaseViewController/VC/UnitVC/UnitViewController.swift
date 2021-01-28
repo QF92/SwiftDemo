@@ -10,7 +10,7 @@ import UIKit
 import Photos
 class UnitViewController: BaseViewController {
 
-    var dataArr = ["统一设置组件库的主题颜色", "快速实现颜色设置", "获取App信息", "字符串截取封装函数", "日期封装", "UIView属性扩展", "Url特殊字符串处理", "数组去重", "左划右划"]
+    var dataArr = ["统一设置组件库的主题颜色", "快速实现颜色设置", "获取App信息", "字符串截取封装函数", "日期封装", "UIView属性扩展", "Url特殊字符串处理", "数组去重", "左划右划","扇形图"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,6 +97,10 @@ extension UnitViewController:UITableViewDelegate,UITableViewDataSource{
         }
         if indexPath.row == 8 {
             let vc = CardListVC.init()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        if indexPath.row == 9 {
+            let vc = UIGraphicsViewController.init()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

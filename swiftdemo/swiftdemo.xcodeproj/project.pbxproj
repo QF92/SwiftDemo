@@ -28,6 +28,7 @@
 		084F474A23D45A5C00E12729 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F474923D45A5C00E12729 /* BaseViewController.swift */; };
 		084F474C23D45B5900E12729 /* CustomNavgationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F474B23D45B5900E12729 /* CustomNavgationView.swift */; };
 		085136662514548000020E26 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085136652514548000020E26 /* CoreLocation.framework */; };
+		08632AFB25C2539D00AEE3AF /* UIGraphicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08632AFA25C2539D00AEE3AF /* UIGraphicsViewController.swift */; };
 		0869920E25159E630034FC7B /* ButSelectedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869920C25159E620034FC7B /* ButSelectedVC.swift */; };
 		0869920F25159E630034FC7B /* AnimationTextFieldAndStarButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869920D25159E620034FC7B /* AnimationTextFieldAndStarButtonVC.swift */; };
 		0869921425159E7C0034FC7B /* AnimationTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869921125159E7C0034FC7B /* AnimationTextFieldView.swift */; };
@@ -379,6 +380,7 @@
 		084F474923D45A5C00E12729 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		084F474B23D45B5900E12729 /* CustomNavgationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavgationView.swift; sourceTree = "<group>"; };
 		085136652514548000020E26 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		08632AFA25C2539D00AEE3AF /* UIGraphicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGraphicsViewController.swift; sourceTree = "<group>"; };
 		0869920C25159E620034FC7B /* ButSelectedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButSelectedVC.swift; sourceTree = "<group>"; };
 		0869920D25159E620034FC7B /* AnimationTextFieldAndStarButtonVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTextFieldAndStarButtonVC.swift; sourceTree = "<group>"; };
 		0869921125159E7C0034FC7B /* AnimationTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTextFieldView.swift; sourceTree = "<group>"; };
@@ -1446,6 +1448,7 @@
 				08AAC4F824FF7982000B3044 /* Compoents */,
 				08AAC4E924FF738B000B3044 /* VC */,
 				080C973824163797008073D4 /* UnitViewController.swift */,
+				08632AFA25C2539D00AEE3AF /* UIGraphicsViewController.swift */,
 			);
 			path = UnitVC;
 			sourceTree = "<group>";
@@ -1978,6 +1981,7 @@
 				08AAC35424FDF40E000B3044 /* MessageStyleView.swift in Sources */,
 				08AAC3A124FDFBCE000B3044 /* BaseBrush.swift in Sources */,
 				084F473F23D4305F00E12729 /* TabBarViewController.swift in Sources */,
+				08632AFB25C2539D00AEE3AF /* UIGraphicsViewController.swift in Sources */,
 				08D15B3F251DE30B0014E98A /* CardListVC.swift in Sources */,
 				08AAC51224FF7DD8000B3044 /* ArrayVC.swift in Sources */,
 				08AAC2EB24FCEEC2000B3044 /* TextToast.swift in Sources */,
